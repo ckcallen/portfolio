@@ -1,0 +1,9 @@
+/* GLOBAL */
+.panel {padding: 28px 32px;}
+.slides {background: #202020;}
+
+/* Typography */
+h1.xl, .h1.largest {font-size: 87px;line-height: 1;letter-spacing:0;}
+@media (min-width: 436px)   {h1.xl, .h1.xl {font-size: 96px;}}
+@media (min-width: 1024px)  {h1.xl, .h1.xl {font-size: 105px;}}
+@media (min-width: 1240px)  {h1.xl, .h1.xl {font-size: 120px;}}
