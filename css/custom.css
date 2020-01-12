@@ -96,21 +96,6 @@
   font-weight: normal !important;
 }
 
-/* .slides, .slides p {
-    font-family: 'TTCommons-Regular', sans-serif;
-    font-weight: normal;
-    font-style: normal;
-}
-.slides h1, .slides h2, .slides h3, .slides h4, .slides h5, .slides h6 {
-    font-family: 'TTCommons-Regular', sans-serif;
-    font-weight: normal;
-    font-style: normal;
-}
-.slides .button, .slides .slides-form {
-    font-family: 'TTCommons-Medium', sans-serif;
-    font-weight: normal;
-    font-style: normal;
-} */
 h1.xl, .h1.largest {font-size: 87px;line-height: 1;letter-spacing:0;}
 @media (min-width: 436px)   {h1.xl, .h1.xl {font-size: 96px;}}
 @media (min-width: 1024px)  {h1.xl, .h1.xl {font-size: 105px;}}
