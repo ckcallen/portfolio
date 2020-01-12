@@ -3,7 +3,100 @@
 .slides {background: #202020;}
 
 /* Typography */
-.slides, .slides p {
+.TTCommons-ExtraLight, .weight-1 {
+	font-family: 'TTCommons-ExtraLight';
+	font-weight: normal;
+	font-style: normal;
+}
+.TTCommons-Light, .weight-2 {
+	font-family: 'TTCommons-Light';
+	font-weight: normal;
+	font-style: normal;
+}
+.TTCommons-Book, .weight-3 {
+	font-family: 'TTCommons-Book';
+	font-weight: normal;
+	font-style: normal;
+}
+.TTCommons-Regular, .weight-4 {
+	font-family: 'TTCommons-Regular';
+	font-weight: normal;
+	font-style: normal;
+}
+.TTCommons-Medium, .weight-5 {
+	font-family: 'TTCommons-Medium';
+	font-weight: normal;
+	font-style: normal;
+}
+.TTCommons-DemiBold, .weight-6 {
+	font-family: 'TTCommons-DemiBold';
+	font-weight: normal;
+	font-style: normal;
+}
+.TTCommons-Bold, .weight-7 {
+	font-family: 'TTCommons-Bold';
+	font-weight: normal;
+	font-style: normal;
+}
+.TTCommons-ExtraBold, .weight-8 {
+	font-family: 'TTCommons-ExtraBold';
+	font-weight: normal;
+	font-style: normal;
+}
+.TTCommons-Black, .weight-9 {
+	font-family: 'TTCommons-Black';
+	font-weight: normal;
+	font-style: normal;
+}
+
+.lightest,
+.ultraLight,
+.thin {
+	font-family: 'TTCommons-ExtraLight';
+  font-weight: normal !important;
+}
+
+.lighter {
+	font-family: 'TTCommons-Light';
+  font-weight: normal !important;
+}
+
+.light {
+	font-family: 'TTCommons-Book';
+  font-weight: normal !important;
+}
+
+.normal {
+	font-family: 'TTCommons-Regular';
+  font-weight: normal !important;
+}
+
+.semiBold {
+	font-family: 'TTCommons-Medium';
+  font-weight: normal !important;
+}
+
+.bold {
+	font-family: 'TTCommons-DemiBold';
+  font-weight: normal !important;
+}
+
+.bolder {
+	font-family: 'TTCommons-Bold';
+  font-weight: normal !important;
+}
+
+.boldest {
+  font-family: 'TTCommons-ExtraBold';
+  font-weight: normal !important;
+}
+
+.ultraBold {
+	font-family: 'TTCommons-Black';
+  font-weight: normal !important;
+}
+
+/* .slides, .slides p {
     font-family: 'TTCommons-Regular', sans-serif;
     font-weight: normal;
     font-style: normal;
@@ -17,7 +110,7 @@
     font-family: 'TTCommons-Medium', sans-serif;
     font-weight: normal;
     font-style: normal;
-}
+} */
 h1.xl, .h1.largest {font-size: 87px;line-height: 1;letter-spacing:0;}
 @media (min-width: 436px)   {h1.xl, .h1.xl {font-size: 96px;}}
 @media (min-width: 1024px)  {h1.xl, .h1.xl {font-size: 105px;}}
