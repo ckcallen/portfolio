@@ -19,7 +19,7 @@
     <style>html:not(.page-loaded) svg, html:not(.page-loaded) nav, html:not(.page-loaded) img, html:not(.page-loaded) .dropdown, html:not(.page-loaded) .sidebar{display:none;}</style>
 
 </head>
-<body class="slides stack smooth slow animated noPreload">
+<body class="slides stack smooth slow animated" style="background: #202020;">
 <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
 
   <symbol id="logo" viewBox="0 0 32 32"><title>Chris Allen</title><path d="M24.8173 29.1821C24.8173 29.1821 21.318 32 15.8849 32C6.90648 32 0 24.9791 0 16C0 7.06866 6.90648 0 15.8849 0C19.2577 0 22.3311 0.944884 24.8684 2.56545L22.4927 5.99718C20.6322 4.77452 18.3702 4.0597 15.8849 4.0597C9.39281 4.0597 4.3741 9.31343 4.3741 16C4.3741 22.7343 9.39281 27.9403 15.8849 27.9403C19.7986 27.9403 22.4691 25.7433 22.4691 25.7433C23.0216 26.4756 23.5332 27.2504 24.0448 28.0252C24.3006 28.4126 24.5564 28.8 24.8173 29.1821Z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M25.4295 8.78253C26.8208 10.6774 27.6259 13.0088 27.6259 15.5224C27.6259 18.8657 26.4748 20.0597 25.0935 20.0597C23.9424 20.0597 23.0216 19.1045 23.0216 16.4776V8.1194H19.3381L18.6475 9.79104C18.6475 9.79104 17.036 7.64179 14.7338 7.64179C10.8201 7.64179 7.59712 10.9851 7.59712 16C7.59712 21.0149 10.8201 24.3582 14.7338 24.3582C18.141 24.3582 20.0288 21.4925 20.0288 21.4925C20.0288 21.4925 21.6403 24.3582 25.0935 24.3582C28.777 24.3582 32 21.0149 32 15.5224C32 11.5379 30.4898 7.89571 27.9495 5.14229L25.4295 8.78253ZM11.9712 16C11.9712 18.3881 13.5827 20.0597 15.4245 20.0597C17.2662 20.0597 18.8777 18.3881 18.8777 16C18.8777 13.6119 17.2662 11.9403 15.4245 11.9403C13.5827 11.9403 11.9712 13.6119 11.9712 16Z"></path></symbol>
@@ -89,12 +89,19 @@
 
   <symbol id="youtube" viewBox="0 0 24 24"><path d="M23.6 6.3c-.3-1.2-1.4-2.2-2.6-2.3-3-.3-6-.3-9-.3s-6 0-9 .3c-1.2.1-2.3 1.1-2.6 2.3-.4 1.8-.4 3.8-.4 5.7 0 1.9 0 3.9.4 5.7.3 1.2 1.4 2.2 2.6 2.3 3 .3 6 .3 9 .3s6 0 9-.3c1.3-.1 2.3-1.1 2.6-2.4.4-1.7.4-3.7.4-5.6 0-1.9 0-3.9-.4-5.7zm-14.1 9v-6.6l6.5 3.3-6.5 3.3z"/></symbol>
 
-</svg><!-- Navigation -->
+</svg>
+
+<!-- Preloader -->
+<div class="progress-bar-container"><div class="progress-bar-wrap"><div class="progress-bar white"></div></div></div>
+
+<!-- Navigation -->
 <nav class="side pole">
   <div class="navigation">
     <ul></ul>
   </div>
-</nav><!-- Panel Top #06 -->
+</nav>
+
+<!-- Panel Top #06 -->
 <nav class="panel top">
   <div class="sections desktop">
     <div class="left"><a href="#" title="Chris Allen"><svg style="width:32px;height:32px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg></a></div>
@@ -109,7 +116,7 @@
     </div> -->
     <div class="right">
       <!-- <span class="button actionButton sidebarTrigger" data-sidebar-id="1"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu"></use></svg></span> -->
-      <a href="#" title="Menu" class="sidebarTrigger" data-sidebar-id="1"><svg style="width:24px;height:24px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu"></use></svg></a>
+      <a title="Menu" class="sidebarTrigger" data-sidebar-id="1"><svg style="width:24px;height:24px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu"></use></svg></a>
     </div>
   </div>
   <div class="sections compact hidden">
@@ -124,25 +131,26 @@
   <div class="content">
     <a href="#" class="logo"><svg width="32" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg></a>
     <ul class="mainMenu margin-top-3">
-      <li><a href="#">All Goods</a></li>
-      <li><a href="#">UI Kits</a></li>
-      <li><a href="#">Icons</a></li>
-      <li><a href="#">Mockups</a></li>
-      <li><a href="#">Toolkit</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">SAP</a></li>
+      <li><a href="#">Flipboard</a></li>
+      <li><a href="#">Peapod</a></li>
+      <li><a href="#">Motorola</a></li>
     </ul>
-    <ul class="subMenu small opacity-8">
-      <li><a href="#">Submit Product</a></li>
-      <li><a href="#">FAQ</a></li>
+    <!-- <ul class="subMenu small opacity-8">
+      <li><a href="#">Product Design</a></li>
+      <li><a href="#">Brand Design</a></li>
       <li><a href="#">License</a></li>
       <li><a href="#">Terms & Conditions</a></li>
       <li><a href="#">Privacy Policy</a></li>
       <li><a href="#">Contact Us</a></li>
-    </ul>
+    </ul> -->
     <ul class="social opacity-8">
       <li><a href="#"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook"></use></svg></a></li>
       <li><a href="#"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use></svg></a></li>
       <li><a href="#"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#instagram"></use></svg></a></li>
     </ul>
+    <div class="whiteSlideSwitch noSelect"><span class="switchElement"></span></div>
   </div>
 </nav>
 
@@ -190,7 +198,7 @@
 </section> -->
 
 <!-- White Slide #50 -->
-<section class="slide black webgl">
+<section class="slide black webgl" data-name="#">
   <div class="content">
     <div class="container">
       <div class="wrap">
@@ -198,35 +206,38 @@
         <div class="fix-12-12 left">
           <!-- <h1 class="largest bolder margin-bottom-2 ae-1 fromBottom">Chris Allen</h1> -->
           <ul class="flex later">
-            <li class="col-6-12 left ae-2">
+            <li class="col-6-12 left margin-bottom-4 ae-2">
               <h1 class="xl bolder margin-bottom-2 ae-1 fromBottom">Chris<br/>Allen</h1>
-              <!-- <a href="#" class="button white weight-6 rounded wideForPhablet cropLeft ae-4 fromBottom">See My Work</a> -->
-              <span class="button big actionButton black toLeft fromBottom ae-3"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#instagram"></use></svg></span>
-              <span class="button big actionButton black margin-left-1 fromBottom ae-4"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#linkedin"></use></svg></span>
-              <span class="button big actionButton black margin-left-1 fromBottom ae-5"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mail"></use></svg></span>
+              <!-- <a class="button white weight-6 rounded margin-right-2 cropLeft ae-2 fromBottom"><span  class="nextSlide">See My Work</span></a> -->
+              <span class="button big actionButton black cropLeft fromBottom ae-2"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#instagram"></use></svg></span>
+              <span class="button big actionButton black margin-left-1 fromBottom ae-3"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#linkedin"></use></svg></span>
+              <span class="button big actionButton black margin-left-1 fromBottom ae-4"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mail"></use></svg></span>
             </li>
             <li class="col-6-12 left ae-2">
-              <p class="largest weight-5 ae-2 fromBottom"><span class="opacity-8">I lead the global design team for the New Ventures &amp; Technologies organization at SAP.&nbsp;&nbsp;We are on a mission to future-proof the company through product incubation and technology innovation.</span></p>
-              <p class="largest weight-4 ae-3 fromBottom"><span class="opacity-5">When I'm not running around the office, I'm usually chasing my 3 year old daughter around the backyard like a hooligan.</span></p>
+              <p class="hideForPhone largest weight-5 ae-4 fromBottom"><span class="opacity-8">I lead the global design team for the New Ventures &amp; Technologies organization at SAP.&nbsp;&nbsp;We are on a mission to future-proof the company through product incubation and technology innovation.</span></p>
+              <p class="hideForPhone largest weight-4 ae-5 fromBottom"><span class="opacity-5">When I'm not running around the office, I'm exploring the Bay Area with my family, playing fetch with my cattle dog, or chasing my 3 year old daughter around the backyard like a hooligan.</span></p>
+              <p class="showForPhone large weight-5 ae-4 fromBottom" style="display:none"><span class="opacity-8">I lead the global design team for the New Ventures &amp; Technologies organization at SAP.&nbsp;&nbsp;We are on a mission to future-proof the company through product incubation and technology innovation.</span></p>
+              <p class="showForPhone large weight-4 ae-5 fromBottom" style="display:none"><span class="opacity-5">When I'm not running around the office, I'm usually chasing my 3 year old daughter around the backyard like a hooligan.</span></p>
+
             </li>
           </ul>
 
           <ul class="flex later margin-top-12">
             <li class="col-3-12 left ae-6">
-              <h6 class="larger weight-5">SAP</h6>
-              <div class="ae-5"><p class="large opacity-4 weight-5">Head of Design, NVT<br/><span class="weight-4 opacity-5">2016-Present</span></p></div>
+              <h6 class="larger weight-6"><a href="#sap">SAP</a></h6>
+              <p class="large opacity-4 weight-5">Head of Design, NVT<br/><span class="weight-4 opacity-5">2016-Present</span></p>
             </li>
             <li class="col-3-12 left ae-7">
-              <h6 class="larger weight-5">Flipboard</h6>
-              <div class="ae-6"><p class="large opacity-4 weight-5">Lead Product Designer<br/><span class="weight-4 opacity-5">2013-2016</span></p></div>
+              <h6 class="larger weight-6">Flipboard</h6>
+              <p class="large opacity-4 weight-5">Lead Product Designer<br/><span class="weight-4 opacity-5">2013-2016</span></p>
             </li>
             <li class="col-3-12 left ae-8">
-              <h6 class="larger weight-5">Peapod</h6>
-              <div class="ae-7"><p class="large opacity-4 weight-5">Lead Product Manager<br/><span class="weight-4 opacity-5">2009-2013</span></p></div>
+              <h6 class="larger weight-6">Peapod</h6>
+              <p class="large opacity-4 weight-5">Lead Product Manager<br/><span class="weight-4 opacity-5">2009-2013</span></p>
             </li>
             <li class="col-3-12 left ae-9">
-              <h6 class="larger weight-5">Motorola</h6>
-              <div class="ae-7"><p class="large opacity-4 weight-5">Product Manager<br/><span class="weight-4 opacity-5">2007-2009</span></p></div>
+              <h6 class="larger weight-6">Motorola</h6>
+              <p class="large opacity-4 weight-5">Product Manager<br/><span class="weight-4 opacity-5">2007-2009</span></p>
             </li>
           </ul>
         </div>
@@ -246,32 +257,69 @@
 
         <div class="fix-12-12 left">
           <ul class="flex later">
-            <li class="col-6-12 left ae-2">
-              <svg width="64" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#sap"></use></svg>
-              <h1 class="xl bolder margin-top-2 cropBottom ae-1 fromBottom">SAP.iO</h1>
-              <p class="largest weight-5 ae-2 fromBottom"><span class="opacity-4">September 2016 - November 2018</span></p>
+            <li class="col-5-12 left">
+              <!-- <svg width="64" height="32" class="ae-1"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#sap"></use></svg> -->
+              <h1 class="xl bolder cropBottom ae-2 fromBottom">SAP</h1>
+              <p class="largest weight-5 ae-3 fromBottom"><span class="opacity-4">September 2016 - Today</span></p>
             </li>
-            <li class="col-6-12 left ae-2">
-              <p class="large weight-4 ae-2 fromBottom"><span class="opacity-8">I led the product & design team for the SAP.iO Venture Studio. Think of the Studio as an internal startup incubator for SAP. I managed a global team of designers, data scientists, and quality assurance specialists to build experiences for the enterprise at startup speed.  I'm also an individual contributor, responsible for the brand and product design for our newly invested ventures.  The work showcased here is my work, the work you see in production is my team's work.</span></p>
+            <li class="col-7-12 left">
+              <p class="large weight-4 ae-4 fromBottom"><span class="opacity-8">I led the product & design team for the SAP.iO Venture Studio. Think of the Studio as an internal startup incubator for SAP. I managed a global team of designers, data scientists, and quality assurance specialists to build experiences for the enterprise at startup speed.  I'm also an individual contributor, responsible for the brand and product design for our newly invested ventures.  The work showcased here is my work, the work you see in production is my team's work.</span></p>
             </li>
           </ul>
         </div>
         <div class="fix-12-12 margin-top-4">
-          <ul class="flex flex-75 fixedSpaces ae-3 popupTrigger noText" data-popup-id="75">
-            <li class="col-3-12 ae-6 fadeIn">
-              <img src="assets/img/gallery-75-1.jpg" class="wide rounded margin-bottom-2" data-slider-id="75" data-slider-action="0" alt="Image"/>
-              <img src="assets/img/gallery-75-2.jpg" class="wide rounded margin-bottom-2" data-slider-id="75" data-slider-action="1" alt="Image"/>
+          <ul class="flex flex-75 fixedSpaces noText" data-popup-id="75">
+            <!-- <li class="col-3-12 fadeIn">
+              <img src="assets/img/io-logo@2x.png" class="wide rounded margin-bottom-2 ae-3" data-slider-id="75" data-slider-action="0" alt="Image"/>
+              <img src="assets/img/ruum-logo@2x.png" class="wide rounded margin-bottom-2 ae-4" data-slider-id="75" data-slider-action="1" alt="Image"/>
             </li>
-            <li class="col-3-12 ae-3 fadeIn">
-              <img src="assets/img/gallery-75-3.jpg" class="wide rounded margin-bottom-2" data-slider-id="75" data-slider-action="2" alt="Image"/>
+            <li class="col-3-12 fadeIn">
+              <img src="assets/img/spotlight-logo@2x.png" class="wide rounded margin-bottom-2 ae-5" data-slider-id="75" data-slider-action="2" alt="Image"/>
             </li>
-            <li class="col-3-12 ae-2 fadeIn">
-              <img src="assets/img/gallery-75-4.jpg" class="wide rounded margin-bottom-2" data-slider-id="75" data-slider-action="3" alt="Image"/>
-              <img src="assets/img/gallery-75-5.jpg" class="wide rounded margin-bottom-2" data-slider-id="75" data-slider-action="4" alt="Image"/>
+            <li class="col-3-12 fadeIn">
+              <img src="assets/img/atlas-logo@2x.png" class="wide rounded margin-bottom-2 ae-6" data-slider-id="75" data-slider-action="3" alt="Image"/>
+              <img src="assets/img/brilliant-logo@2x.png" class="wide rounded margin-bottom-2 ae-7" data-slider-id="75" data-slider-action="4" alt="Image"/>
             </li>
-            <li class="col-3-12 ae-7 fadeIn">
-              <img src="assets/img/gallery-75-6.jpg" class="wide rounded margin-bottom-2" data-slider-id="75" data-slider-action="5" alt="Image"/>
-              <img src="assets/img/gallery-75-7.jpg" class="wide rounded margin-bottom-2" data-slider-id="75" data-slider-action="6" alt="Image"/>
+            <li class="col-3-12 fadeIn">
+              <img src="assets/img/nvt-logo@2x.png" class="wide rounded margin-bottom-2 ae-8" data-slider-id="75" data-slider-action="5" alt="Image"/>
+            </li> -->
+            <li class="col-3-12 col-tablet-1-2 col-phablet-1-1 ae-3 fromCenter">
+              <a href="https://sap.io/" class="box-74" style="background:#465E75;">
+                <div class="thumbnail-74">
+                  <img src="assets/img/io-logo@2x.png" class="wide" data-slider-id="75" data-slider-action="0" alt="SAP.iO"/>
+                </div>
+              </a>
+              <a href="https://www.ruumapp.com" class="box-74" style="background:#01CEAC;">
+                <div class="thumbnail-74">
+                  <img src="assets/img/ruum-logo@2x.png" class="wide" data-slider-id="75" data-slider-action="1" alt="Ruum"/>
+                </div>
+              </a>
+            </li>
+            <li class="col-3-12 col-tablet-1-2 col-phablet-1-1 fromCenter ae-4">
+              <a href="https://www.getspotlight.io" class="box-74" style="background:#1C90FF">
+                <div class="thumbnail-74">
+                  <img src="assets/img/spotlight-logo@2x.png" class="wide" data-slider-id="75" data-slider-action="2" alt="Spotlight"/>
+                </div>
+              </a>
+            </li>
+            <li class="col-3-12 col-tablet-1-2 col-phablet-1-1 fromCenter ae-5">
+              <a href="https://www.atlasapp.io" class="box-74" style="background:#5D36FF">
+                <div class="thumbnail-74">
+                  <img src="assets/img/atlas-logo@2x.png" class="wide" data-slider-id="75" data-slider-action="3" alt="Atlas"/>
+                </div>
+              </a>
+              <a href="https://www.brillianthire.io" class="box-74" style="background:#ffb300">
+                <div class="thumbnail-74">
+                  <img src="assets/img/brilliant-logo@2x.png" class="wide" data-slider-id="75" data-slider-action="4" alt="Brilliant"/>
+                </div>
+              </a>
+            </li>
+            <li class="col-3-12 col-tablet-1-2 col-phablet-1-1 fromCenter ae-6">
+              <a href="https://www.sap.com/corporate/en/company/innovation.html" class="box-74" style="background:#F31CEC">
+                <div class="thumbnail-74">
+                  <img src="assets/img/nvt-logo@2x.png" class="wide" data-slider-id="75" data-slider-action="5" alt="NVT"/>
+                </div>
+              </a>
             </li>
           </ul>
         </div>
@@ -291,25 +339,22 @@
 
         <ul class="slider animated ae-1 fromAbove inlineBlock clickable popupContent disableSelect" data-slider-id="75" style="display: inline-block;">
           <li class="selected">
-            <img src="assets/img/gallery-75-full-1.jpg" class="rounded" alt="Image"/>
+            <img src="assets/img/io-logo@2x.png" class="rounded" alt="Image"/>
           </li>
           <li>
-            <img src="assets/img/gallery-75-full-2.jpg" class="rounded" alt="Image"/>
+            <img src="assets/img/ruum-logo@2x.png" class="rounded" alt="Image"/>
           </li>
           <li>
-            <img src="assets/img/gallery-75-full-3.jpg" class="rounded" alt="Image"/>
+            <img src="assets/img/spotlight-logo@2x.png" class="rounded" alt="Image"/>
           </li>
           <li>
-            <img src="assets/img/gallery-75-full-4.jpg" class="rounded" alt="Image"/>
+            <img src="assets/img/atlas-logo@2x.png" class="rounded" alt="Image"/>
           </li>
           <li>
-            <img src="assets/img/gallery-75-full-5.jpg" class="rounded" alt="Image"/>
+            <img src="assets/img/brilliant-logo@2x.png" class="rounded" alt="Image"/>
           </li>
           <li>
-            <img src="assets/img/gallery-75-full-6.jpg" class="rounded" alt="Image"/>
-          </li>
-          <li>
-            <img src="assets/img/gallery-75-full-7.jpg" class="rounded" alt="Image"/>
+            <img src="assets/img/nvt-logo@2x.png" class="rounded" alt="Image"/>
           </li>
         </ul>
 
@@ -318,6 +363,99 @@
   </div>
 </div>
 
+<!-- White Slide #34 -->
+<section class="slide whiteSlide" data-name="dabra">
+  <div class="content">
+    <div class="container">
+      <div class="wrap">
+
+        <div class="fix-12-12">
+          <ul class="flex verticalCenter reverse">
+            <li class="col-6-12 left middle">
+              <div class="fix-6-12 toLeft margin-left-tablet-auto margin-right-tablet-auto">
+                <h1 class="xl bolder cropBottom ae-1 fromBottom">Dabra</h1>
+                <p class="largest weight-5 ae-2 fromBottom"><span class="opacity-4">SAP.iO Venture · <a href="https://www.dabra.ai">www.dabra.ai</a></span></p>
+                <p class="ae-3 fromBottom large">Dabra helps you have productive, focused 1:1 meetings, and build trust with the people you work with.  Dabra is built with Vue.js and designed for mobile and desktop use when it comes to preparing, facilitating, and synthesizing meetings.  I created the initial concepts for the application and worked with developers in Tel Aviv to release their beta.</p>
+                <p class="ae-4 fromBottom large margin-bottom-4">Once Dabra was up and running, I hired incredible designers in Javier Yep and Daniel Jacoby to bring Dabra to the next level.  My favorite aspect about Dabra is the ability to view the notes history of my conversations - it's particularly helpful when having performance discussions.</p>
+                <a class="button black rounded ae-5 fromBottom cropLeft wideForPhone">Sign Up For Free</a>
+                <a class="button white rounded ae-6 fromBottom wideForPhone">Learn More</a>
+              </div>
+            </li>
+            <li class="col-6-12">
+              <img class="ae-9 margin-bottom-tablet-4 switchDay showForDesktop showForTablet showForPhablet showForPhone toCenter" width="320" styles="margin:-40% 0" src="assets/img/dabra-mobile@2x.png" alt="Dabra Concept Designs" data-action="zoom"/>
+              <img class="ae-9 margin-bottom-tablet-4 switchNight hideForDesktop hideForTablet hideForPhablet hideForPhone toCenter" width="320" styles="margin:-40% 0" src="assets/img/dabra-mobile-dark@2x.png" alt="Dabra Concept Designs" data-action="zoom"/>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- White Slide #34 -->
+<section class="slide whiteSlide" data-name="ruum">
+  <div class="content">
+    <div class="container">
+      <div class="wrap">
+
+        <div class="fix-12-12">
+          <ul class="flex verticalCenter reverse">
+            <li class="col-6-12 left middle">
+              <div class="fix-6-12 toLeft margin-left-tablet-auto margin-right-tablet-auto">
+                <h1 class="xl bolder cropBottom ae-1 fromBottom">Ruum</h1>
+                <p class="largest weight-5 ae-2 fromBottom"><span class="opacity-4">SAP.iO Venture · <a href="https://www.dabra.ai">www.ruumapp.com</a></span></p>
+                <p class="ae-3 fromBottom large">Ruum helps you collaboratively plan, organize and execute your work efficiently.  Ruum is built with Angular and designed for mobile and primarily desktop use when it comes to building flexible project templates, assigning and managing tasks and timelines, as well as modeling new business processes.  I created the initial concepts and worked with developers in Berlin to release their beta.</p>
+                <p class="ae-4 fromBottom large margin-bottom-4">Once Ruum was off to the races, I helped hire incredible designers in Matthias Stegmueller, Iulia Shkatova, and Sarah Mautsch.  My favorite aspect about Ruum is it's clean and simple interface to collaborate with team members in real time on all kinds of different types of projects.</p>
+                <a class="button black rounded ae-5 fromBottom cropLeft wideForPhone">Sign Up For Free</a>
+                <a class="button white rounded ae-6 fromBottom wideForPhone">Learn More</a>
+              </div>
+            </li>
+            <li class="col-6-12">
+              <img class="ae-9 margin-bottom-tablet-4 switchDay showForDesktop showForTablet showForPhablet showForPhone toCenter" width="520" styles="margin:-40% 0" src="assets/img/ruum@2x.png" alt="Dabra Concept Designs" data-action="zoom"/>
+              <img class="ae-9 margin-bottom-tablet-4 switchNight hideForDesktop hideForTablet hideForPhablet hideForPhone toCenter" width="520" styles="margin:-40% 0" src="assets/img/ruum-dark@2x.png" alt="Dabra Concept Designs" data-action="zoom"/>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- White Slide #34 -->
+<section class="slide whiteSlide" data-name="atlas">
+  <div class="content">
+    <div class="container">
+      <div class="wrap">
+
+        <div class="fix-12-12">
+          <ul class="flex verticalCenter reverse">
+            <li class="col-6-12 left middle">
+              <div class="fix-6-12 toLeft margin-left-tablet-auto margin-right-tablet-auto">
+                <h1 class="xl bolder cropBottom ae-1 fromBottom">Atlas</h1>
+                <p class="largest weight-5 ae-2 fromBottom"><span class="opacity-4">SAP.iO Venture · <a href="https://atlasapp.io/">www.atlasapp.io</a></span></p>
+                <p class="ae-3 fromBottom large">Atlas was a geospatial analytics platform built to make data-driven decisions easy for everyone.  Atlas was built with Vue.js and most interactions were tied tightly to Mapbox when it came to manipulating the map and viewing a variety of data visualization types in 2D and 3D.  I created the initial concepts and worked with the developers in San Francisco to release their beta.</p>
+                <p class="ae-4 fromBottom large margin-bottom-4">Once Atlas was available for productive use, I hired Lucia Melgarejo and David Shen to explore how we can visualize geospatial data over time across multiple layers.  Unfortunately after a couple years, it was clear we wouldn't find a product market fit, so we decided to go through the painful process of sunsetting the venture.</p>
+                <a class="button black rounded ae-5 fromBottom cropLeft wideForPhone">Learn More</a>
+                <!-- <a class="button white rounded ae-6 fromBottom wideForPhone">Learn More</a> -->
+              </div>
+            </li>
+            <li class="col-6-12">
+              <img class="ae-9 margin-bottom-tablet-4 switchDay showForDesktop showForTablet showForPhablet showForPhone toCenter" width="520" styles="margin:-40% 0" src="assets/img/atlas@2x.png" alt="Dabra Concept Designs" data-action="zoom"/>
+              <img class="ae-9 margin-bottom-tablet-4 switchNight hideForDesktop hideForTablet hideForPhablet hideForPhone toCenter" width="520" styles="margin:-40% 0" src="assets/img/atlas@2x.png" alt="Dabra Concept Designs" data-action="zoom"/>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</section>
+
 <!-- Panel Bottom #09 -->
 <nav class="panel bottom">
   <div class="sections">
@@ -325,271 +463,339 @@
   </div>
 </nav>
 
-    <!-- Compressed Styles -->
-    <link href="css/slides.min.css?503341" rel="stylesheet" type="text/css">
+<!-- Step 3: Copy the toggle button -->
+<!-- <nav class="panel bottom forceMobileView">
+  <div class="sections">
+    <div class="left"><div class="whiteSlideSwitch noSelect">Night<span class="switchElement"></span>Day</div></div>
+    <div class="right"></div>
+  </div>
+</nav> -->
 
-    <!-- Custom Styles -->
-    <link href="css/custom.css" rel="stylesheet" type="text/css">
+<!-- Compressed Styles -->
+<link href="css/slides.min.css?503341" rel="stylesheet" type="text/css">
 
-    <!-- TT Commons
-    /**
-     * @license
-     * MyFonts Webfont Build ID 3855617, 2020-01-11T20:02:27-0500
-     *
-     * The fonts listed in this notice are subject to the End User License
-     * Agreement(s) entered into by the website owner. All other parties are
-     * explicitly restricted from using the Licensed Webfonts(s).
-     *
-     * You may obtain a valid license at the URLs below.
-     *
-     * Webfont: TTCommons-ExtraLight by TypeType
-     * URL: https://www.myfonts.com/fonts/type-type/tt-commons/extra-light/
-     *
-     * Webfont: TTCommons-Thin by TypeType
-     * URL: https://www.myfonts.com/fonts/type-type/tt-commons/thin/
-     *
-     * Webfont: TTCommons-Black by TypeType
-     * URL: https://www.myfonts.com/fonts/type-type/tt-commons/black/
-     *
-     * Webfont: TTCommons-Bold by TypeType
-     * URL: https://www.myfonts.com/fonts/type-type/tt-commons/bold/
-     *
-     * Webfont: TTCommons-Light by TypeType
-     * URL: https://www.myfonts.com/fonts/type-type/tt-commons/light/
-     *
-     * Webfont: TTCommons-Medium by TypeType
-     * URL: https://www.myfonts.com/fonts/type-type/tt-commons/medium/
-     *
-     * Webfont: TTCommons-ExtraBold by TypeType
-     * URL: https://www.myfonts.com/fonts/type-type/tt-commons/extra-bold/
-     *
-     * Webfont: TTCommons-DemiBold by TypeType
-     * URL: https://www.myfonts.com/fonts/type-type/tt-commons/demi-bold/
-     *
-     * Webfont: TTCommons-Regular by TypeType
-     * URL: https://www.myfonts.com/fonts/type-type/tt-commons/regular/
-     *
-     * Webfont: TTCommons-Book by TypeType
-     * URL: https://www.myfonts.com/fonts/type-type/tt-commons/book/
-     *
-     *
-     * Licensed pageviews: 20,000
-     * Webfonts copyright: Copyright (c) 2018-2019 by TypeType. Designers Ivan Gladkikh,
-     * Pavel Emelyanov. Technical designers Marina Khodak, Vika Usmanova, Nadyr Rakhimov,
-     * Antonina Zhulkova. All rights reserved.
-     *
-     * © 2020 MyFonts Inc
-    */
+<!-- Custom Styles -->
+<link href="css/custom.css" rel="stylesheet" type="text/css">
 
-    /TT Commons -->
-    <link href="css/TTCommons.css" rel="stylesheet" type="text/css">
+<!-- TT Commons
+/**
+ * @license
+ * MyFonts Webfont Build ID 3855617, 2020-01-11T20:02:27-0500
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: TTCommons-ExtraLight by TypeType
+ * URL: https://www.myfonts.com/fonts/type-type/tt-commons/extra-light/
+ *
+ * Webfont: TTCommons-Thin by TypeType
+ * URL: https://www.myfonts.com/fonts/type-type/tt-commons/thin/
+ *
+ * Webfont: TTCommons-Black by TypeType
+ * URL: https://www.myfonts.com/fonts/type-type/tt-commons/black/
+ *
+ * Webfont: TTCommons-Bold by TypeType
+ * URL: https://www.myfonts.com/fonts/type-type/tt-commons/bold/
+ *
+ * Webfont: TTCommons-Light by TypeType
+ * URL: https://www.myfonts.com/fonts/type-type/tt-commons/light/
+ *
+ * Webfont: TTCommons-Medium by TypeType
+ * URL: https://www.myfonts.com/fonts/type-type/tt-commons/medium/
+ *
+ * Webfont: TTCommons-ExtraBold by TypeType
+ * URL: https://www.myfonts.com/fonts/type-type/tt-commons/extra-bold/
+ *
+ * Webfont: TTCommons-DemiBold by TypeType
+ * URL: https://www.myfonts.com/fonts/type-type/tt-commons/demi-bold/
+ *
+ * Webfont: TTCommons-Regular by TypeType
+ * URL: https://www.myfonts.com/fonts/type-type/tt-commons/regular/
+ *
+ * Webfont: TTCommons-Book by TypeType
+ * URL: https://www.myfonts.com/fonts/type-type/tt-commons/book/
+ *
+ *
+ * Licensed pageviews: 20,000
+ * Webfonts copyright: Copyright (c) 2018-2019 by TypeType. Designers Ivan Gladkikh,
+ * Pavel Emelyanov. Technical designers Marina Khodak, Vika Usmanova, Nadyr Rakhimov,
+ * Antonina Zhulkova. All rights reserved.
+ *
+ * © 2020 MyFonts Inc
+*/
 
-    <!-- jQuery 3.4.1 -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+/TT Commons -->
+<link href="css/TTCommons.css" rel="stylesheet" type="text/css">
 
-    <!-- Compressed Scripts -->
-    <script src="js/slides.min.js?503341" type="text/javascript"></script>
+<!-- jQuery 3.4.1 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-    <script type="text/javascript" src="https://rawcdn.githack.com/mrdoob/three.js/41284c6812176d16a6e426f1962ee1738885fa58/build/three.min.js"></script>
-    <script type="text/javascript" src="https://rawcdn.githack.com/mrdoob/three.js/41284c6812176d16a6e426f1962ee1738885fa58/examples/js/WebGL.js"></script>
+<!-- Compressed Scripts -->
+<script src="js/slides.min.js?503341" type="text/javascript"></script>
 
-    <script type="x-shader/x-vertex" id="vertexshader">
-      attribute float scale;
-      void main() {
-      vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
-      gl_PointSize = scale * ( 400.0 / - mvPosition.z );
-      gl_Position = projectionMatrix * mvPosition;
+<!-- WebGL -->
+<script type="text/javascript" src="https://rawcdn.githack.com/mrdoob/three.js/41284c6812176d16a6e426f1962ee1738885fa58/build/three.min.js"></script>
+<script type="text/javascript" src="https://rawcdn.githack.com/mrdoob/three.js/41284c6812176d16a6e426f1962ee1738885fa58/examples/js/WebGL.js"></script>
+<script type="x-shader/x-vertex" id="vertexshader">
+  attribute float scale;
+  void main() {
+  vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
+  gl_PointSize = scale * ( 400.0 / - mvPosition.z );
+  gl_Position = projectionMatrix * mvPosition;
+}
+</script>
+<script type="x-shader/x-fragment" id="fragmentshader">
+  uniform vec3 color;
+  void main() {
+  if ( length( gl_PointCoord - vec2( 0.5, 0.5 ) ) > 0.475 ) discard;
+  gl_FragColor = vec4( color, 1.0 );
+}
+</script>
+<script>
+  if ( WEBGL.isWebGLAvailable() === false ) {
+    document.body.appendChild( WEBGL.getWebGLErrorMessage() );
+  }
+  var SEPARATION = 100, AMOUNTX = 50, AMOUNTY = 50;
+  var container;
+  var camera, scene, renderer;
+  var particles, count = 0;
+  var mouseX = 0, mouseY = 0;
+  var windowHalfX = window.innerWidth / 2;
+  var windowHalfY = window.innerHeight / 2;
+
+  init();
+  animate();
+
+  function init() {
+
+    container = $('.webgl .background');
+
+    camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 10000 );
+    camera.position.z = 1000;
+
+    scene = new THREE.Scene();
+    scene.background = new THREE.Color( 0x202020 );
+
+    //
+
+    var numParticles = AMOUNTX * AMOUNTY;
+
+    var positions = new Float32Array( numParticles * 3 );
+    var scales = new Float32Array( numParticles );
+
+    var i = 0, j = 0;
+
+    for ( var ix = 0; ix < AMOUNTX; ix ++ ) {
+
+      for ( var iy = 0; iy < AMOUNTY; iy ++ ) {
+
+        positions[ i ] = ix * SEPARATION - ( ( AMOUNTX * SEPARATION ) / 2 ); // x
+        positions[ i + 1 ] = 0; // y
+        positions[ i + 2 ] = iy * SEPARATION - ( ( AMOUNTY * SEPARATION ) / 2 ); // z
+
+        scales[ j ] = 1;
+
+        i += 3;
+        j ++;
+
+      }
+
     }
-    </script>
 
-    <script type="x-shader/x-fragment" id="fragmentshader">
-      uniform vec3 color;
-      void main() {
-      if ( length( gl_PointCoord - vec2( 0.5, 0.5 ) ) > 0.475 ) discard;
-      gl_FragColor = vec4( color, 1.0 );
+    var geometry = new THREE.BufferGeometry();
+    geometry.addAttribute( 'position', new THREE.BufferAttribute( positions, 3 ) );
+    geometry.addAttribute( 'scale', new THREE.BufferAttribute( scales, 1 ) );
+
+    var material = new THREE.ShaderMaterial( {
+
+      uniforms: {
+        color: { value: new THREE.Color( 0x444444 ) },
+      },
+      vertexShader: document.getElementById( 'vertexshader' ).textContent,
+      fragmentShader: document.getElementById( 'fragmentshader' ).textContent
+
+    } );
+
+    //
+
+    particles = new THREE.Points( geometry, material );
+    scene.add( particles );
+
+    renderer = new THREE.WebGLRenderer( { antialias: true } );
+    renderer.setPixelRatio( window.devicePixelRatio );
+    renderer.setSize( window.innerWidth, window.innerHeight );
+    $(container).append( renderer.domElement );
+
+    document.addEventListener( 'mousemove', onDocumentMouseMove, false );
+    document.addEventListener( 'touchstart', onDocumentTouchStart, false );
+    document.addEventListener( 'touchmove', onDocumentTouchMove, false );
+
+    //
+
+    window.addEventListener( 'resize', onWindowResize, false );
+
+  }
+
+  function onWindowResize() {
+
+    windowHalfX = window.innerWidth / 2;
+    windowHalfY = window.innerHeight / 2;
+
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+
+    renderer.setSize( window.innerWidth, window.innerHeight );
+
+  }
+
+  //
+
+  function onDocumentMouseMove( event ) {
+
+    mouseX = event.clientX - windowHalfX;
+    mouseY = event.clientY - windowHalfY;
+
+  }
+
+  function onDocumentTouchStart( event ) {
+
+    if ( event.touches.length === 1 ) {
+
+      event.preventDefault();
+
+      mouseX = event.touches[ 0 ].pageX - windowHalfX;
+      mouseY = event.touches[ 0 ].pageY - windowHalfY;
+
     }
-    </script>
 
-    <script>
-      if ( WEBGL.isWebGLAvailable() === false ) {
-        document.body.appendChild( WEBGL.getWebGLErrorMessage() );
+  }
+
+  function onDocumentTouchMove( event ) {
+
+    if ( event.touches.length === 1 ) {
+
+      event.preventDefault();
+
+      mouseX = event.touches[ 0 ].pageX - windowHalfX;
+      mouseY = event.touches[ 0 ].pageY - windowHalfY;
+
+    }
+
+  }
+
+  //
+
+  function animate() {
+
+    requestAnimationFrame( animate );
+
+    render();
+
+  }
+
+  function render() {
+
+    camera.position.x += ( mouseX - camera.position.x ) * .05;
+    camera.position.y += ( mouseY - camera.position.y + 200) * .05;
+    camera.lookAt( scene.position );
+
+    var positions = particles.geometry.attributes.position.array;
+    var scales = particles.geometry.attributes.scale.array;
+
+    var i = 0, j = 0;
+
+    for ( var ix = 0; ix < AMOUNTX; ix ++ ) {
+
+      for ( var iy = 0; iy < AMOUNTY; iy ++ ) {
+
+        positions[ i + 1 ] = ( Math.sin( ( ix + count ) * 0.3 ) * 50 ) +
+        ( Math.sin( ( iy + count ) * 0.5 ) * 50 );
+
+        scales[ j ] = ( Math.sin( ( ix + count ) * 0.3 ) + 1 ) * 8 +
+        ( Math.sin( ( iy + count ) * 0.5 ) + 1 ) * 8;
+
+        i += 3;
+        j ++;
+
       }
-      var SEPARATION = 100, AMOUNTX = 50, AMOUNTY = 50;
-      var container;
-      var camera, scene, renderer;
-      var particles, count = 0;
-      var mouseX = 0, mouseY = 0;
-      var windowHalfX = window.innerWidth / 2;
-      var windowHalfY = window.innerHeight / 2;
 
-      init();
-      animate();
+    }
 
-      function init() {
+    particles.geometry.attributes.position.needsUpdate = true;
+    particles.geometry.attributes.scale.needsUpdate = true;
 
-        container = $('.webgl .background');
+    renderer.render( scene, camera );
 
-        camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 10000 );
-        camera.position.z = 1000;
+    count += 0.1;
 
-        scene = new THREE.Scene();
-        scene.background = new THREE.Color( 0x202020 );
+  }
 
-        //
+</script>
 
-        var numParticles = AMOUNTX * AMOUNTY;
+<!-- Preloader -->
+<script>
+  $(function(){
+    if (window.preload && window.images){
 
-        var positions = new Float32Array( numParticles * 3 );
-        var scales = new Float32Array( numParticles );
+      window.progressInterval = setInterval(function(){
 
-        var i = 0, j = 0;
+        var progress = window.loadingProgress/window.images;
 
-        for ( var ix = 0; ix < AMOUNTX; ix ++ ) {
-
-          for ( var iy = 0; iy < AMOUNTY; iy ++ ) {
-
-            positions[ i ] = ix * SEPARATION - ( ( AMOUNTX * SEPARATION ) / 2 ); // x
-            positions[ i + 1 ] = 0; // y
-            positions[ i + 2 ] = iy * SEPARATION - ( ( AMOUNTY * SEPARATION ) / 2 ); // z
-
-            scales[ j ] = 1;
-
-            i += 3;
-            j ++;
-
-          }
-
+        if (progress >= 1) {
+          clearInterval(window.progressInterval);
+          $('.progress-bar-container').addClass('loaded');
+          setTimout(function(){
+            $('.progress-bar-container').remove()
+          },500);
         }
+      },100);
+    }
+  });
+</script>
 
-        var geometry = new THREE.BufferGeometry();
-        geometry.addAttribute( 'position', new THREE.BufferAttribute( positions, 3 ) );
-        geometry.addAttribute( 'scale', new THREE.BufferAttribute( scales, 1 ) );
+<!-- Tilt Tiles -->
+<!-- <script src="https://cdn.rawgit.com/gijsroge/tilt.js/38991dd7/dest/tilt.jquery.js"></script>
+<script>
+  $(function(){
+    $('.js-tilt').tilt({
+      scale: 1.025
+    });
+  });
+</script> -->
 
-        var material = new THREE.ShaderMaterial( {
-
-          uniforms: {
-            color: { value: new THREE.Color( 0x444444 ) },
-          },
-          vertexShader: document.getElementById( 'vertexshader' ).textContent,
-          fragmentShader: document.getElementById( 'fragmentshader' ).textContent
-
-        } );
-
-        //
-
-        particles = new THREE.Points( geometry, material );
-        scene.add( particles );
-
-        renderer = new THREE.WebGLRenderer( { antialias: true } );
-        renderer.setPixelRatio( window.devicePixelRatio );
-        renderer.setSize( window.innerWidth, window.innerHeight );
-        $(container).append( renderer.domElement );
-
-        document.addEventListener( 'mousemove', onDocumentMouseMove, false );
-        document.addEventListener( 'touchstart', onDocumentTouchStart, false );
-        document.addEventListener( 'touchmove', onDocumentTouchMove, false );
-
-        //
-
-        window.addEventListener( 'resize', onWindowResize, false );
-
-      }
-
-      function onWindowResize() {
-
-        windowHalfX = window.innerWidth / 2;
-        windowHalfY = window.innerHeight / 2;
-
-        camera.aspect = window.innerWidth / window.innerHeight;
-        camera.updateProjectionMatrix();
-
-        renderer.setSize( window.innerWidth, window.innerHeight );
-
-      }
-
-      //
-
-      function onDocumentMouseMove( event ) {
-
-        mouseX = event.clientX - windowHalfX;
-        mouseY = event.clientY - windowHalfY;
-
-      }
-
-      function onDocumentTouchStart( event ) {
-
-        if ( event.touches.length === 1 ) {
-
-          event.preventDefault();
-
-          mouseX = event.touches[ 0 ].pageX - windowHalfX;
-          mouseY = event.touches[ 0 ].pageY - windowHalfY;
-
-        }
-
-      }
-
-      function onDocumentTouchMove( event ) {
-
-        if ( event.touches.length === 1 ) {
-
-          event.preventDefault();
-
-          mouseX = event.touches[ 0 ].pageX - windowHalfX;
-          mouseY = event.touches[ 0 ].pageY - windowHalfY;
-
-        }
-
-      }
-
-      //
-
-      function animate() {
-
-        requestAnimationFrame( animate );
-
-        render();
-
-      }
-
-      function render() {
-
-        camera.position.x += ( mouseX - camera.position.x ) * .05;
-        camera.position.y += ( mouseY - camera.position.y + 200) * .05;
-        camera.lookAt( scene.position );
-
-        var positions = particles.geometry.attributes.position.array;
-        var scales = particles.geometry.attributes.scale.array;
-
-        var i = 0, j = 0;
-
-        for ( var ix = 0; ix < AMOUNTX; ix ++ ) {
-
-          for ( var iy = 0; iy < AMOUNTY; iy ++ ) {
-
-            positions[ i + 1 ] = ( Math.sin( ( ix + count ) * 0.3 ) * 50 ) +
-            ( Math.sin( ( iy + count ) * 0.5 ) * 50 );
-
-            scales[ j ] = ( Math.sin( ( ix + count ) * 0.3 ) + 1 ) * 8 +
-            ( Math.sin( ( iy + count ) * 0.5 ) + 1 ) * 8;
-
-            i += 3;
-            j ++;
-
-          }
-
-        }
-
-        particles.geometry.attributes.position.needsUpdate = true;
-        particles.geometry.attributes.scale.needsUpdate = true;
-
-        renderer.render( scene, camera );
-
-        count += 0.1;
-
-      }
-
-    </script>
+<!-- Color Switcher -->
+<script>
+$(function(){
+  $('.whiteSlideSwitch').click(function(){
+    $('body,.slide').toggleClass('whiteSlide');
+    $('body,.sidebar').toggleClass('black');
+    $('body,.sidebar').toggleClass('white');
+    $('body,.switchDay').toggleClass('hideForDesktop');
+    $('body,.switchDay').toggleClass('showForDesktop');
+    $('body,.switchDay').toggleClass('hideForTablet');
+    $('body,.switchDay').toggleClass('showForTablet');
+    $('body,.switchDay').toggleClass('hideForPhablet');
+    $('body,.switchDay').toggleClass('showForPhablet');
+    $('body,.switchDay').toggleClass('hideForPhone');
+    $('body,.switchDay').toggleClass('showForPhone');
+    $('body,.switchNight').toggleClass('showForDesktop');
+    $('body,.switchNight').toggleClass('hideForDesktop');
+    $('body,.switchNight').toggleClass('hideForTablet');
+    $('body,.switchNight').toggleClass('showForTablet');
+    $('body,.switchNight').toggleClass('hideForPhablet');
+    $('body,.switchNight').toggleClass('showForPhablet');
+    $('body,.switchNight').toggleClass('hideForPhone');
+    $('body,.switchNight').toggleClass('showForPhone');
+    localStorage.whiteSlide = $('body').hasClass('whiteSlide');
+  });
+  if (localStorage.whiteSlide == "true") {
+    $('.whiteSlideSwitch').click();
+  }
+});
+</script>
 
 </body>
 </html>

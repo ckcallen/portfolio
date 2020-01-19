@@ -1,278 +1,123 @@
-/* GLOBAL */
+/* Global */
 .panel {padding: 28px 32px;}
-.slides {background: #202020;}
+.slides {
+  background: #202020;
+  line-height: 1.25;
+  font-family: 'TTCommons-Regular','-apple-system','BlinkMacSystemFont','Segoe UI',Helvetica,Arial,sans-serif;
+}
+
+/* Colors */
+.teal {background: #42CEC4 !important; color: #FFF !important;}
+.tealText {color: #42CEC4}
 
 /* Typography */
-.TTCommons-ExtraLight, .weight-1 {
-	font-family: 'TTCommons-ExtraLight';
-	font-weight: normal;
-	font-style: normal;
-}
-.TTCommons-Light, .weight-2 {
-	font-family: 'TTCommons-Light';
-	font-weight: normal;
-	font-style: normal;
-}
-.TTCommons-Book, .weight-3 {
-	font-family: 'TTCommons-Book';
-	font-weight: normal;
-	font-style: normal;
-}
-.TTCommons-Regular, .weight-4 {
-	font-family: 'TTCommons-Regular';
-	font-weight: normal;
-	font-style: normal;
-}
-.TTCommons-Medium, .weight-5 {
-	font-family: 'TTCommons-Medium';
-	font-weight: normal;
-	font-style: normal;
-}
-.TTCommons-DemiBold, .weight-6 {
-	font-family: 'TTCommons-DemiBold';
-	font-weight: normal;
-	font-style: normal;
-}
-.TTCommons-Bold, .weight-7 {
-	font-family: 'TTCommons-Bold';
-	font-weight: normal;
-	font-style: normal;
-}
-.TTCommons-ExtraBold, .weight-8 {
-	font-family: 'TTCommons-ExtraBold';
-	font-weight: normal;
-	font-style: normal;
-}
-.TTCommons-Black, .weight-9 {
-	font-family: 'TTCommons-Black';
-	font-weight: normal;
-	font-style: normal;
-}
+.TTCommons-Thin, .ultraLight, .thin {         font-family: 'TTCommons-Thin';        font-weight: normal !important; font-style: normal !important;}
+.TTCommons-ExtraLight, .weight-1, .lightest { font-family: 'TTCommons-ExtraLight';  font-weight: normal !important; font-style: normal !important;}
+.TTCommons-Light, .weight-2, .lighter {       font-family: 'TTCommons-Light';       font-weight: normal !important; font-style: normal !important;}
+.TTCommons-Book, .weight-3, .light {          font-family: 'TTCommons-Book';        font-weight: normal !important; font-style: normal !important;}
+.TTCommons-Regular, .weight-4, .normal {      font-family: 'TTCommons-Regular';     font-weight: normal !important; font-style: normal !important;}
+.TTCommons-Medium, .weight-5, .semiBold {     font-family: 'TTCommons-Medium';      font-weight: normal !important; font-style: normal !important;}
+.TTCommons-DemiBold, .weight-6, .bold {       font-family: 'TTCommons-DemiBold';    font-weight: normal !important; font-style: normal !important;}
+.TTCommons-Bold, .weight-7, .bolder {         font-family: 'TTCommons-Bold';        font-weight: normal !important; font-style: normal !important;}
+.TTCommons-ExtraBold, .weight-8, .boldest {   font-family: 'TTCommons-ExtraBold';   font-weight: normal !important; font-style: normal !important;}
+.TTCommons-Black, .weight-9, .ultraBold {     font-family: 'TTCommons-Black';       font-weight: normal !important; font-style: normal !important;}
 
-.lightest,
-.ultraLight,
-.thin {
-	font-family: 'TTCommons-ExtraLight';
-  font-weight: normal !important;
-}
-
-.lighter {
-	font-family: 'TTCommons-Light';
-  font-weight: normal !important;
-}
-
-.light {
-	font-family: 'TTCommons-Book';
-  font-weight: normal !important;
-}
-
-.normal {
-	font-family: 'TTCommons-Regular';
-  font-weight: normal !important;
-}
-
-.semiBold {
-	font-family: 'TTCommons-Medium';
-  font-weight: normal !important;
-}
-
-.bold {
-	font-family: 'TTCommons-DemiBold';
-  font-weight: normal !important;
-}
-
-.bolder {
-	font-family: 'TTCommons-Bold';
-  font-weight: normal !important;
-}
-
-.boldest {
-  font-family: 'TTCommons-ExtraBold';
-  font-weight: normal !important;
-}
-
-.ultraBold {
-	font-family: 'TTCommons-Black';
-  font-weight: normal !important;
-}
+.slides, .slides p, .p, p {font-family: 'TTCommons-Regular'; font-weight: normal !important; font-style: normal !important; letter-spacing: 0 !important;}
+.slides h1, .slides h2, .slides h3 { font-family: 'TTCommons-Bold'; font-weight: normal !important; font-style: normal !important; letter-spacing: 0 !important;}
+.slides h4, .slides h5, .slides h6, b, strong { font-family: 'TTCommons-DemiBold'; font-weight: normal !important; font-style: normal !important; letter-spacing: 0 !important;}
+.slides .button, .slides .slides-form { font-family: 'TTCommons-Medium'; font-weight: normal !important; font-style: normal !important; letter-spacing: 0 !important;}
 
 h1.xl, .h1.largest {font-size: 87px;line-height: 1;letter-spacing:0;}
 @media (min-width: 436px)   {h1.xl, .h1.xl {font-size: 96px;}}
 @media (min-width: 1024px)  {h1.xl, .h1.xl {font-size: 105px;}}
 @media (min-width: 1240px)  {h1.xl, .h1.xl {font-size: 120px;}}
 
-/* Showcases */
-.showcase .showcase-container li {
-  transform: translateZ(0);
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
+/* Preloader */
+.progress-bar-container {
+    position: fixed;
+    background: #202020;
+    height: 100vh;
+    width: 100vw;
+    z-index: 100;
 }
 
-.fix-custom {
-  padding-left: calc(8% + 15px);
-  padding-right: calc(8% + 15px);
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1698px)  {
-  .fix-custom {
-    padding-left: 0%;
-    padding-right: 0%;
-    max-width: 1800px;
-    left: -50px;
-    width: calc(100% + 100px) !important;
-    position: relative;
-  }
-  .showcase .showcase-container li:nth-child(3n+1) {
-    text-align: right;
-  }
-  .showcase .showcase-container li:nth-child(3n+3) {
-    text-align: left;
-  }
-}
-
-.showcase li .sc {
-  margin-bottom: 50px;
-  color: #858585;
-  font-size: 17px;
-  line-height: 25px;
-  position: relative;
-}
-
-.showcase li .sc-img {
-  font-size: 0;
-  line-height: 0;
-  background: #E8E8E8;
-  padding-top: 20px;
-  border-radius: 5px;
-  display: inline-block;
-  box-shadow: 0 12px 24px rgba(0,0,0,0.4);
-  -webkit-transition: 1s cubic-bezier(0.35, 1.69, 0.35, 0.81);
-  transition: 1s cubic-bezier(0.35, 1.69, 0.35, 0.81);
-}
-
-.showcase.slide li .sc:hover .sc-img {
-  box-shadow: 0 22px 34px rgba(0,0,0,0.4);  box-shadow: 13px 22px 34px rgba(0,0,0,0.4);
-  -webkit-transform: translateY(-10px) scale(1.025);
-  transform: translateY(-10px) scale(1.025);
-}
-
-/* shiny effect on hover */
-.showcase.slide li .sc-img:after {
-  content: ":";
-  position: absolute;
-  top: 20px;
-  left: 0;
-  bottom: -1px;
-  right: 0;
-  width: 100%;
-
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100;White+to+Transparent */
-  background: -moz-linear-gradient(-45deg,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
+.progress-bar-container.loaded {
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
   opacity: 0;
-  -webkit-transition: 1s cubic-bezier(0.35, 1.69, 0.35, 0.81);
-  transition: 1s cubic-bezier(0.35, 1.69, 0.35, 0.81);
-  border-radius: 0 0 3px 3px;
+  pointer-events: none;
 }
 
-.showcase.slide li .sc:hover .sc-img:after {
-  opacity: 0.5;
-}
-
-.showcase.popup li .sc-img {
-  background: #35363a;
-  padding-top: 30px;
-}
-
-.showcase li .sc-img img {
-  margin-bottom: -1px;
-  border-radius: 0 0 3px 3px;
-}
-
-.showcase.popup li .sc-img a:hover {
-  opacity: 1;
-}
-
-.showcase.popup li .sc-img a:before {
-  content: 'remove_red_eye';
-  background: rgba(0,0,0,0.2);
-  top: 30px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  position: absolute;
-  -webkit-transition: 0.25s;
-  transition: 0.35s;
-}
-
-.showcase.popup li .sc-img:hover a:before {
-  opacity: 0;
-}
-
-.showcase li .sc-img:before {
-  content: "...";
-  position: absolute;
-  font-size: 45px;
-  color: #fff;
-  top: -4px;
-  line-height: 0;
-  letter-spacing: -2px;
-  left: 4px;
-}
-
-/* popup */
-.showcase.popup li .sc-img:before {
-  font-size: 50px;
-  top: 0px;
-  left: 9px;
-}
-
-.showcase li .sc strong {
-  display: block;
-  color: #202020;
-  margin-top: 10px;
-}
-
-.slide.showcase li .sc:after {
-  content: attr(data-hover-text);
-  position: absolute;
-  top: calc(50% - 50px);
+.progress-bar-wrap {
+  top: 50%;
   left: 50%;
-  right: inherit;
-  background: #fff;
-  border-radius: 50px;
-  padding: 8px 21px;
-  opacity: 0;
-  -webkit-transform: translateY(-10px) scale(1.025) translateX(-50%);
-  transform: translateY(-10px) scale(1.025) translateX(-50%);
-  -webkit-transition: 1s cubic-bezier(0.35,1.69,0.35,0.81);
-  transition: 1s cubic-bezier(0.35,1.69,0.35,0.81);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  height: 3px;
+  width: 200px;
+  background: #222;
 }
 
-.slide.showcase li .sc:hover:after {
-  opacity: 1;
-  -webkit-transform: translateY(0px) translateX(-50%);
-  transform: translateY(0px) translateX(-50%);
+.progress-bar-wrap,
+.progress-bar {
+  position: absolute;
+  height: 3px;
 }
 
-.showcase-container {
-  align-items: center;
-  justify-content: center;
-}
-
-.showcase-container.controller li.selected {
+/* Color Switch */
+.whiteSlideSwitch {
   cursor: pointer;
-  pointer-events: all;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  user-select: none;
+  display: inline-block;
+  /* padding: 1px 10px; */
 }
 
-.popup[data-popup-id="showcase"] .slider > li.selected {
-  -webkit-animation: 0.5s fade-6In;
-  animation: 0.5s fade-6In;
+.switchElement {
+  display: inline-block;
+  background: #0092F9;
+  width: 36px;
+  height: 20px;
+  position: relative;
+  border-radius: 11px;
+  vertical-align: bottom;
+  /* margin: 0 10px; */
+  top: 1px;
 }
 
-.fix-custom-popup {
-  max-width: 1480px !important;
+.switchElement:after {
+  content: "";
+  position: absolute;
+  border-radius: 14px;
+  top: 3px;
+  left: 3px;
+  width:14px;
+  height: 14px;
+  background: #fff;
+  display: inline-block;
+  transition: transform 0.25s, width 0.25s;
+  transition-timing-function: cubic-bezier(0.23, 2.01, 0.43, 0.66);
 }
+
+.whiteSlideSwitch:active .switchElement:after {
+  width: 18px;
+  transition: 0s;
+}
+
+.slides.whiteSlide .switchElement {
+  background: #ccc;
+}
+
+.slides.whiteSlide .switchElement:after {
+  transform: translateX(16px);
+}
+
+.slides.whiteSlide .whiteSlideSwitch:active .switchElement:after {
+  transform: translateX(13px);
+}
+
+/* SAP */
+.box-74 {margin-bottom: 20px;}
