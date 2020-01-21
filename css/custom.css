@@ -7,8 +7,23 @@
 }
 
 /* Colors */
-.teal {background: #42CEC4 !important; color: #FFF !important;}
-.tealText {color: #42CEC4}
+.newTeal {background: #01CEAC !important; color: #FFF !important;}
+.newTealText {color: #01CEAC !important;}
+.newMango {background: #FFB300 !important; color: #FFF !important;}
+.newMangoText {color: #FFB300 !important;}
+.newIndigo {background: #5D36FF !important; color: #FFF !important;}
+.newIndigoText {color: #5D36FF !important;}
+.newGrey {background: #465E75 !important; color: #FFF !important;}
+.newGreyText {color: #465E75 !important;}
+.newBlue {background: #1C90FF !important; color: #FFF !important;}
+.newBlueText {color: #1C90FF !important;}
+.newPink {background: #F31CEC !important; color: #FFF !important;}
+.newPinkText {color: #F31CEC !important;}
+.newRed {background: #EE3939 !important; color: #FFF !important;}
+.newRedText {color: #EE3939 !important;}
+.newDeepBlue {background: #002A86 !important; color: #FFF !important;}
+.newDeepBlueText {color: #002A86 !important;}
+.newWhiteText {color: #FFFFFF !important;}
 
 /* Typography */
 .TTCommons-Thin, .ultraLight, .thin {         font-family: 'TTCommons-Thin';        font-weight: normal !important; font-style: normal !important;}
