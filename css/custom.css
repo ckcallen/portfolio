@@ -1,7 +1,7 @@
 /* Global */
 .panel {padding: 28px 32px;}
 .slides {
-  background: #202020;
+  /* background: #202020; */
   line-height: 1.25;
   font-family: 'TTCommons-Regular','-apple-system','BlinkMacSystemFont','Segoe UI',Helvetica,Arial,sans-serif;
 }
@@ -25,6 +25,22 @@
 .newDeepBlueText {color: #002A86 !important;}
 .newWhiteText {color: #FFFFFF !important;}
 
+/* Panel Colors Overrides */
+.slides.stage-1 {background: #202020;}
+.slides.stage-2 {background: #202020;}
+.slides.stage-3 {background: #202020;}                                  /* Ruum */
+.slides.stage-3 .panel svg {fill:#1C90FF !important;}                   /* Ruum */
+.slides.stage-3 .navigation li:after {background: #1C90FF !important;}  /* Ruum */
+.slides.stage-4 {background: #1C90FF;}                                  /* Dabra */
+.slides.stage-4 .panel svg {fill:#01CEAC !important;}                   /* Dabra */
+.slides.stage-4 .navigation li:after {background: #01CEAC !important;}  /* Dabra */
+.slides.stage-5 {background: #01CEAC;}                                  /* Atlas */
+.slides.stage-5 .panel svg {fill:#5D36FF !important;}                   /* Atlas */
+.slides.stage-5 .navigation li:after {background: #5D36FF !important;}  /* Atlas */
+.slides.stage-6 {background: #5D36FF;}                                  /* Spotlight */
+.slides.stage-6 .panel svg {fill:#465E75 !important;}                   /* Spotlight */
+.slides.stage-6 .navigation li:after {background: #465E75 !important;}  /* Spotlight */
+
 /* Typography */
 .TTCommons-Thin, .ultraLight, .thin {         font-family: 'TTCommons-Thin';        font-weight: normal !important; font-style: normal !important;}
 .TTCommons-ExtraLight, .weight-1, .lightest { font-family: 'TTCommons-ExtraLight';  font-weight: normal !important; font-style: normal !important;}
@@ -38,14 +54,15 @@
 .TTCommons-Black, .weight-9, .ultraBold {     font-family: 'TTCommons-Black';       font-weight: normal !important; font-style: normal !important;}
 
 .slides, .slides p, .p, p {font-family: 'TTCommons-Regular'; font-weight: normal !important; font-style: normal !important; letter-spacing: 0 !important;}
-.slides h1, .slides h2, .slides h3 { font-family: 'TTCommons-Bold'; font-weight: normal !important; font-style: normal !important; letter-spacing: 0 !important;}
-.slides h4, .slides h5, .slides h6, b, strong { font-family: 'TTCommons-DemiBold'; font-weight: normal !important; font-style: normal !important; letter-spacing: 0 !important;}
-.slides .button, .slides .slides-form { font-family: 'TTCommons-Medium'; font-weight: normal !important; font-style: normal !important; letter-spacing: 0 !important;}
+.slides h1 {font-family: 'TTCommons-ExtraBold'; font-weight: normal !important; font-style: normal !important; letter-spacing: -.02em !important;}
+.slides h2, .slides h3 {font-family: 'TTCommons-Bold'; font-weight: normal !important; font-style: normal !important; letter-spacing: 0 !important;}
+.slides h4, .slides h5, .slides h6, b, strong {font-family: 'TTCommons-DemiBold'; font-weight: normal !important; font-style: normal !important; letter-spacing: 0 !important;}
+.slides .button, .slides .slides-form {font-family: 'TTCommons-Medium'; font-weight: normal !important; font-style: normal !important; letter-spacing: 0 !important;}
 
-h1.xl, .h1.largest {font-size: 87px;line-height: 1;letter-spacing:0;}
-@media (min-width: 436px)   {h1.xl, .h1.xl {font-size: 96px;}}
-@media (min-width: 1024px)  {h1.xl, .h1.xl {font-size: 105px;}}
-@media (min-width: 1240px)  {h1.xl, .h1.xl {font-size: 120px;}}
+h1.xl, .h1.largest {font-size: 72px;line-height: 1;letter-spacing:0;}
+@media (min-width: 436px)   {h1.xl, .h1.xl {font-size: 72px;}}
+@media (min-width: 1024px)  {h1.xl, .h1.xl {font-size: 96px;}}
+@media (min-width: 1240px)  {h1.xl, .h1.xl {font-size: 128px;}}
 
 /* Preloader */
 .progress-bar-container {
