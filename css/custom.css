@@ -23,23 +23,31 @@
 .newRedText {color: #EE3939 !important;}
 .newDeepBlue {background: #002A86 !important; color: #FFF !important;}
 .newDeepBlueText {color: #002A86 !important;}
+.newGreen {background: #5DC121 !important; color: #FFF !important;}
+.newGreenText {color: #5DC121 !important;}
 .newWhiteText {color: #FFFFFF !important;}
 
 /* Panel Colors Overrides */
 .slides.stage-1 {background: #202020;}
 .slides.stage-2 {background: #202020;}
-.slides.stage-3 {background: #202020;}                                  /* Ruum */
+.slides.stage-3 {background: #1C90FF;}                                  /* Ruum */
 .slides.stage-3 .panel svg {fill:#1C90FF !important;}                   /* Ruum */
 .slides.stage-3 .navigation li:after {background: #1C90FF !important;}  /* Ruum */
-.slides.stage-4 {background: #1C90FF;}                                  /* Dabra */
+.slides.stage-4 {background: #01CEAC;}                                  /* Dabra */
 .slides.stage-4 .panel svg {fill:#01CEAC !important;}                   /* Dabra */
 .slides.stage-4 .navigation li:after {background: #01CEAC !important;}  /* Dabra */
-.slides.stage-5 {background: #01CEAC;}                                  /* Atlas */
+.slides.stage-5 {background: #5D36FF;}                                  /* Atlas */
 .slides.stage-5 .panel svg {fill:#5D36FF !important;}                   /* Atlas */
 .slides.stage-5 .navigation li:after {background: #5D36FF !important;}  /* Atlas */
-.slides.stage-6 {background: #5D36FF;}                                  /* Spotlight */
+.slides.stage-6 {background: #465E75;}                                  /* Spotlight */
 .slides.stage-6 .panel svg {fill:#465E75 !important;}                   /* Spotlight */
 .slides.stage-6 .navigation li:after {background: #465E75 !important;}  /* Spotlight */
+.slides.stage-7 {background: #EE3939;}                                  /* Flipboard */
+.slides.stage-7 .panel svg {fill:#EE3939 !important;}                   /* Flipboard */
+.slides.stage-7 .navigation li:after {background: #EE3939 !important;}  /* Flipboard */
+.slides.stage-8 {background: #5DC121;}                                  /* Peapod */
+.slides.stage-8 .panel svg {fill:#5DC121 !important;}                   /* Peapod */
+.slides.stage-8 .navigation li:after {background: #5DC121 !important;}  /* Peapod */
 
 /* Typography */
 .TTCommons-Thin, .ultraLight, .thin {         font-family: 'TTCommons-Thin';        font-weight: normal !important; font-style: normal !important;}
@@ -56,13 +64,16 @@
 .slides, .slides p, .p, p {font-family: 'TTCommons-Regular'; font-weight: normal !important; font-style: normal !important; letter-spacing: 0 !important;}
 .slides h1 {font-family: 'TTCommons-ExtraBold'; font-weight: normal !important; font-style: normal !important; letter-spacing: -.02em !important;}
 .slides h2, .slides h3 {font-family: 'TTCommons-Bold'; font-weight: normal !important; font-style: normal !important; letter-spacing: 0 !important;}
-.slides h4, .slides h5, .slides h6, b, strong {font-family: 'TTCommons-DemiBold'; font-weight: normal !important; font-style: normal !important; letter-spacing: 0 !important;}
-.slides .button, .slides .slides-form {font-family: 'TTCommons-Medium'; font-weight: normal !important; font-style: normal !important; letter-spacing: 0 !important;}
+.slides h4, .slides h5, .slides h6, b, strong, .slides .button {font-family: 'TTCommons-DemiBold'; font-weight: normal !important; font-style: normal !important; letter-spacing: 0 !important;}
+.slides .slides-form {font-family: 'TTCommons-Medium'; font-weight: normal !important; font-style: normal !important; letter-spacing: 0 !important;}
 
 h1.xl, .h1.largest {font-size: 72px;line-height: 1;letter-spacing:0;}
 @media (min-width: 436px)   {h1.xl, .h1.xl {font-size: 72px;}}
 @media (min-width: 1024px)  {h1.xl, .h1.xl {font-size: 96px;}}
 @media (min-width: 1240px)  {h1.xl, .h1.xl {font-size: 128px;}}
+
+/* Buttons */
+.button {font-size: 18px;}
 
 /* Preloader */
 .progress-bar-container {
@@ -153,3 +164,15 @@ h1.xl, .h1.largest {font-size: 72px;line-height: 1;letter-spacing:0;}
 
 /* SAP */
 .box-74 {margin-bottom: 20px;}
+
+/* Flipboard */
+@media (max-width: 768px) {
+  .whiteSlide[class*=fade-3] .content {background: rgba(0,0,0,.5)}
+  .popup .background, .slide .background {background-position: right;}
+}
+@media (min-width: 768px) {
+.whiteSlide[class*=fade-3] .content {background: rgba(0,0,0,.3)}
+}
+
+/* Peapod */
+.peapodVideo {max-height:348px;}
