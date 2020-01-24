@@ -167,7 +167,7 @@ h1.xl, .h1.largest {font-size: 72px;line-height: 1;letter-spacing:0;}
 
 /* Flipboard */
 @media (max-width: 768px) {
-  .whiteSlide[class*=fade-3] .content {background: rgba(0,0,0,.5)}
+  .whiteSlide[class*=fade-3] .content {background: rgba(0,0,0,.75)}
   .popup .background, .slide .background {background-position: right;}
 }
 @media (min-width: 768px) {

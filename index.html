@@ -16,7 +16,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 
     <!-- Fix flash of unstyled content  -->
-    <style>html:not(.page-loaded) svg, html:not(.page-loaded) nav, html:not(.page-loaded) img, html:not(.page-loaded) .dropdown, html:not(.page-loaded) .sidebar{display:none;}</style>
+    <style>
+      /* html:not(.page-loaded) svg, html:not(.page-loaded) nav, html:not(.page-loaded) img, html:not(.page-loaded) .dropdown, html:not(.page-loaded) .sidebar {display:none;} */
+      html:not(.page-loaded) {display:none}
+    </style>
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
@@ -521,7 +524,7 @@
 </section>
 
 <!-- Peapod -->
-<section class="slide whiteSlide video pauseOffScreen" data-name="peapod">
+<section class="slide whiteSlide" data-name="peapod">
   <div class="content">
     <div class="container">
       <div class="wrap">
@@ -539,7 +542,7 @@
             <li class="col-1-12"></li>
             <li class="col-6-12">
               <div class="videoThumbnail rounded shadow popupTrigger ae-1 fromBottom margin-bottom-tablet-4" data-popup-id="16">
-                <video poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" autoplay="" loop="" muted="" webkit-playsinline="">
+                <video poster="assets/img/peapod@2x.jpg" autoplay="" loop="" muted="" webkit-playsinline="">
                   <source src="assets/video/peapod.mp4" type="video/mp4">
                 </video>
               </div>
@@ -560,7 +563,7 @@
     <div class="container">
       <div class="wrap">
         <div class="fix-10-12">
-          <video class="popupContent shadow rounded" poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" autoplay="" loop="" muted="" webkit-playsinline="">
+          <video class="popupContent shadow rounded" poster="assets/img/peapod@2x.jpg" autoplay="" loop="" muted="" webkit-playsinline="">
             <source src="assets/video/peapod.mp4" type="video/mp4">
           </video>
         </div>
@@ -935,53 +938,6 @@ $(function(){
     $('.whiteSlideSwitch').click();
   }
 });
-</script>
-
-<!-- Autoplay Video -->
-<script>
-  $(function(){
-
-    if (window.isScroll) {
-      $('html,body').on('mousewheel', function(){
-        checkBGVideo();
-      });
-    } else {
-      $(window).on('slideChange',function(event, number, element){
-        //stop all videos
-        $('video').each(function(){ $(this)[0].pause();});
-
-        //start selected
-        if ($(element).hasClass('video')){
-          var $el = $(element).find('video').eq(0);
-          $el[0].play();
-        }
-      });
-    }
-
-    //toggle play/pause video
-    function checkBGVideo(){
-      $('.slide.video').each(function(){
-        var $el = $(this).find('video').eq(0);
-
-        if (isElementInView($(this))) {
-          $el[0].play();
-        } else {
-          $el[0].pause();
-        }
-      });
-    }
-
-    //is element in view?
-    function isElementInView(element) {
-      var scrollTop = $(window).scrollTop(),
-          $element = $(element),
-          pageBottom = scrollTop + $(window).height(),
-          elementTop = $element.offset().top,
-          elementBottom = elementTop + $element.height();
-
-      return (scrollTop > elementTop - $(window).height()) && (scrollTop < elementTop + $element.height());
-    }
-  });
 </script>
 
 </body>
