@@ -7,67 +7,95 @@
 }
 
 /* Side */
-@media (min-width: 1380px) {
-  .side {
-    padding-left: 36px;
-    padding-right: 36px;
-  }
+.side {
+  padding-left: 36px;
+  padding-right: 36px;
 }
 
 /* Colors */
 .newBlack {background: #000000 !important;}
-.newTeal {background: #01CEAC !important; color: #FFF !important;}
-.newTealText {color: #01CEAC !important;}
-.newMango {background: #FFB300 !important; color: #FFF !important;}
-.newMangoText {color: #FFB300 !important;}
-.newIndigo {background: #5D36FF !important; color: #FFF !important;}
-.newIndigoText {color: #5D36FF !important;}
-.newGrey {background: #465E75 !important; color: #FFF !important;}
-.newGreyText {color: #465E75 !important;}
-.newBlue {background: #1C90FF !important; color: #FFF !important;}
-.newBlueText {color: #1C90FF !important;}
-.newPink {background: #F31CEC !important; color: #FFF !important;}
-.newPinkText {color: #F31CEC !important;}
-.newRed {background: #EE3939 !important; color: #FFF !important;}
-.newRedText {color: #EE3939 !important;}
-.newDeepBlue {background: #002A86 !important; color: #FFF !important;}
-.newDeepBlueText {color: #002A86 !important;}
-.newGreen {background: #5DC121 !important; color: #FFF !important;}
-.newGreenText {color: #5DC121 !important;}
 .newWhiteText {color: #FFFFFF !important;}
 
+.newTeal {background: #01CEAC !important; color: #FFF !important;}
+.newTealText {color: #01CEAC !important;}
+.newTealShadow {box-shadow: 0 2px 4px rgba(1,206,172,.16), 0 2px 8px rgba(1,206,172,.16) !important;}
+.newTealShadow:hover {box-shadow: 0 16px 32px rgba(1,206,172,.32) !important;}
+
+.newMango {background: #FFB300 !important; color: #FFF !important;}
+.newMangoText {color: #FFB300 !important;}
+.newMangoShadow {box-shadow: 0 2px 4px rgba(255,179,0,.16), 0 2px 8px rgba(255,179,0,.16) !important;}
+.newMangoShadow:hover {box-shadow: 0 16px 32px rgba(255,179,0,.32) !important;}
+
+.newIndigo {background: #5D36FF !important; color: #FFF !important;}
+.newIndigoText {color: #5D36FF !important;}
+.newIndigoShadow {box-shadow: 0 2px 4px rgba(93,54,255,.16), 0 2px 8px rgba(93,54,255,.16) !important;}
+.newIndigoShadow:hover {box-shadow: 0 16px 32px rgba(93,54,255,.32) !important;}
+
+.newGrey {background: #465E75 !important; color: #FFF !important;}
+.newGreyText {color: #465E75 !important;}
+.newGreyShadow {box-shadow: 0 2px 4px rgba(70,94,117,.16), 0 2px 8px rgba(70,94,117,.16) !important;}
+.newGreyShadow:hover {box-shadow: 0 16px 32px rgba(70,94,117,.32) !important;}
+
+.newBlue {background: #1C90FF !important; color: #FFF !important;}
+.newBlueText {color: #1C90FF !important;}
+.newBlueShadow {box-shadow: 0 2px 4px rgba(28,144,255,.16), 0 2px 8px rgba(28,144,255,.16) !important;}
+.newBlueShadow:hover {box-shadow: 0 16px 32px rgba(28,144,255,.32) !important;}
+
+.newPink {background: #F31CEC !important; color: #FFF !important;}
+.newPinkText {color: #F31CEC !important;}
+.newPinkShadow {box-shadow: 0 2px 4px rgba(243,28,236,.16), 0 2px 8px rgba(243,28,236,.16) !important;}
+.newPinkShadow:hover {box-shadow: 0 16px 32px rgba(243,28,236,.32) !important;}
+
+.newRed {background: #EE3939 !important; color: #FFF !important;}
+.newRedText {color: #EE3939 !important;}
+.newRedShadow {box-shadow: 0 2px 4px rgba(238,57,57,.16), 0 2px 8px rgba(238,57,57,.16) !important;}
+.newRedShadow:hover {box-shadow: 0 16px 32px rgba(238,57,57,.32) !important;}
+
+.newDeepBlue {background: #002A86 !important; color: #FFF !important;}
+.newDeepBlueText {color: #002A86 !important;}
+.newDeepBlueShadow {box-shadow: 0 2px 4px rgba(0,42,134,.16), 0 2px 8px rgba(0,42,134,.16) !important;}
+.newDeepBlueShadow:hover {box-shadow: 0 16px 32px rgba(0,42,134,.32) !important;}
+
+.newGreen {background: #5DC121 !important; color: #FFF !important;}
+.newGreenText {color: #5DC121 !important;}
+.newGreenShadow {box-shadow: 0 2px 4px rgba(93,193,33,.16), 0 2px 8px rgba(93,193,33,.16) !important;}
+.newGreenShadow:hover {box-shadow: 0 16px 32px rgba(93,193,33,.32) !important;}
+
 /* Panel Colors Overrides */
-.slides.stage-1 {background: #202020;}
-.slides.stage-2 {background: #202020;}
+.switchElement {background: #eeeeee !important;}                          /* Switch */
+.click .switchElement {background: #404040 !important;}                   /* Switch */
+.slides.stage-1 {background: #202020;}                                    /* Home */
+.slides.stage-1 .switchElement {background: #404040 !important;}          /* Home */
+.slides.stage-2 {background: #202020;}                                    /* SAP */
 .slides.stage-3 {background: #1C90FF;}                                    /* Ruum */
 .slides.stage-3 .panel svg {fill:#1C90FF !important;}                     /* Ruum */
 .slides.stage-3 .navigation li:after {background: #1C90FF !important;}    /* Ruum */
-.slides.stage-3 .click .switchElement {background: #1C90FF !important;}   /* Ruum */
+.slides.stage-3 .click .switchElement:after {background: #1C90FF !important;}   /* Ruum */
 .slides.stage-4 {background: #01CEAC;}                                    /* Dabra */
 .slides.stage-4 .panel svg {fill:#01CEAC !important;}                     /* Dabra */
 .slides.stage-4 .navigation li:after {background: #01CEAC !important;}    /* Dabra */
-.slides.stage-4 .click .switchElement {background: #01CEAC !important;}   /* Dabra */
+.slides.stage-4 .click .switchElement:after {background: #01CEAC !important;}   /* Dabra */
 .slides.stage-5 {background: #FFB300;}                                    /* Icons */
 .slides.stage-5 .panel svg {fill:#FFB300 !important;}                     /* Icons */
 .slides.stage-5 .navigation li:after {background: #FFB300 !important;}    /* Icons */
-.slides.stage-5 .click .switchElement {background: #FFB300 !important;}   /* Icons */
+.slides.stage-5 .click .switchElement:after {background: #FFB300 !important;}   /* Icons */
 .slides.stage-6 {background: #5D36FF;}                                    /* Atlas */
 .slides.stage-6 .panel svg {fill:#5D36FF !important;}                     /* Atlas */
 .slides.stage-6 .navigation li:after {background: #5D36FF !important;}    /* Atlas */
-.slides.stage-6 .click .switchElement {background: #5D36FF !important;}   /* Icons */
+.slides.stage-6 .click .switchElement:after {background: #5D36FF !important;}   /* Icons */
 .slides.stage-7 {background: #465E75;}                                    /* Spotlight */
 .slides.stage-7 .panel svg {fill:#465E75 !important;}                     /* Spotlight */
 .slides.stage-7 .navigation li:after {background: #465E75 !important;}    /* Spotlight */
-.slides.stage-7 .click .switchElement {background: #465E75 !important;}   /* Spotlight */
+.slides.stage-7 .click .switchElement:after {background: #465E75 !important;}   /* Spotlight */
 .slides.stage-8 {background: #EE3939;}                                    /* Flipboard */
 .slides.stage-8 .panel svg {fill:#EE3939 !important;}                     /* Flipboard */
 .slides.stage-8 .navigation li:after {background: #EE3939 !important;}    /* Flipboard */
-.slides.stage-8 .click .switchElement {background: #EE3939 !important;}   /* Flipboard */
+.slides.stage-8 .click .switchElement:after {background: #EE3939 !important;}   /* Flipboard */
 .slides.stage-9 {background: #5DC121;}                                    /* Peapod */
 .slides.stage-9 .panel svg {fill:#5DC121 !important;}                     /* Peapod */
 .slides.stage-9 .navigation li:after {background: #5DC121 !important;}    /* Peapod */
-.slides.stage-9 .click .switchElement {background: #5DC121 !important;}   /* Peapod */
-.slides.stage-10 .click .switchElement {background: #606060 !important;}  /* Motorola */
+.slides.stage-9 .click .switchElement:after {background: #5DC121 !important;}   /* Peapod */
+.slides.stage-10 .click .switchElement:after {background: #FFFFFF !important;}  /* Motorola */
 
 /* Typography */
 .TTCommons-Thin, .ultraLight, .thin {         font-family: 'TTCommons-Thin';        font-weight: normal !important; font-style: normal !important;}
