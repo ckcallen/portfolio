@@ -13,7 +13,7 @@
     <meta name="twitter:description" content="Personal website and portfolio for Chris Allen, the Head of Design for SAP New Ventures &amp; Technologies based in San Francisco." />
     <meta name="og:image" content="assets/uploads/chris-allen-social.png?p=RSHGb1lk" />
     <meta name="twitter:image" content="assets/uploads/chris-allen-social.png?p=RSHGb1lk" />
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin> -->
 
     <!-- Fix flash of unstyled content  -->
     <style>
@@ -21,10 +21,18 @@
       html:not(.page-loaded) {display:none}
     </style>
 
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="assets/favicons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/favicons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/favicons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/favicons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="assets/favicons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="assets/favicons/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="assets/favicons/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="assets/favicons/favicon-16x16.png" sizes="16x16" />
+    <meta name="application-name" content="Chris Allen"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="assets/favicons/mstile-144x144.png" />
 
 </head>
 <body class="slides stack smooth slow animated">
@@ -94,37 +102,29 @@
   </div>
 </nav>
 
-<!-- Panel Top #06 -->
+<!-- Panel Top -->
 <nav class="panel top">
   <div class="sections desktop">
     <div class="left"><a href="#" title="Chris Allen"><svg style="width:32px;height:32px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg></a></div>
-    <!-- <div class="center">
-      <ul class="menu">
-        <li><a href="#"><h5>Top</h5></a></li>
-        <li><a href="#"><h5 class="weight-5 opacity-3">SAP</h5></a></li>
-        <li><a href="#"><h5 class="weight-5 opacity-3">Flipboard</h5></a></li>
-        <li><a href="#"><h5 class="weight-5 opacity-3">Peapod</h5></a></li>
-        <li><a href="#"><h5 class="weight-5 opacity-3">Motorola</h5></a></li>
-      </ul>
-    </div> -->
-    <!-- <div class="center"><span class="prevSlide"><svg style="width:32px;height:32px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-up"></use></svg></span></div> -->
-    <div class="right">
-      <!-- <span class="button actionButton sidebarTrigger" data-sidebar-id="1"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu"></use></svg></span> -->
-      <a title="Menu" class="sidebarTrigger" data-sidebar-id="1"><svg style="width:32px;height:32px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu"></use></svg></a>
-    </div>
+    <div class="right"><a title="Menu" class="sidebarTrigger" data-sidebar-id="1"><svg style="width:32px;height:32px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu"></use></svg></a></div>
   </div>
   <div class="sections compact hidden">
     <div class="left"><a href="#" title="Chris Allen"><svg style="width:32px;height:32px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg></a></div>
-    <!-- <div class="center"><span class="prevSlide"><svg style="width:32px;height:32px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-up"></use></svg></span></div> -->
-    <div class="right"><span class="button actionButton sidebarTrigger" data-sidebar-id="1"><svg style="width:32px;height:32px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu"></use></svg></span></div>
+    <div class="right"><a title="Menu" class="sidebarTrigger" data-sidebar-id="1"><svg style="width:32px;height:32px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu"></use></svg></a></div>
   </div>
 </nav>
 
 <!-- Sidebar -->
 <nav class="sidebar white" data-sidebar-id="1">
-  <div class="close"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg></div>
   <div class="content">
-    <a href="#" class="logo"><svg width="32" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg></a>
+    <ul class="flex verticalCenter reverse">
+      <li class="col-6-12 col-phone-1-2 left">
+        <a href="#" class="logo"><svg width="32" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg></a>
+      </li>
+      <li class="col-6-12 col-phone-1-2 right">
+        <div class="whiteSlideSwitch noSelect"><span class="switchElement"></span></div>
+      </li>
+    </ul>
     <ul class="mainMenu margin-top-3">
       <li><a href="#">Home</a></li>
       <li><a href="#sap">SAP</a></li>
@@ -132,71 +132,20 @@
       <li><a href="#ruum">Ruum</a></li>
       <li><a href="#icons">iO Icons</a></li>
       <li><a href="#atlas">Atlas</a></li>
-
-      <!-- <ul class="subMenu small cropBottom padding-left-2 opacity-8">
-        <li><a href="#dabra">Dabra</a></li>
-        <li><a href="#ruum">Ruum</a></li>
-        <li><a href="#atlas">Atlas</a></li>
-      </ul> -->
-
       <li><a href="#flipboard">Flipboard</a></li>
       <li><a href="#peapod">Peapod</a></li>
       <li><a href="#motorola">Motorola</a></li>
     </ul>
-    <ul class="social opacity-8">
+    <ul class="social opacity-8 margin-top-4">
       <li><a href="https://www.linkedin.com/in/ckcallen/"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#linkedin"></use></svg></a></li>
       <li><a href="https://www.instagram.com/ckcallen/"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#instagram"></use></svg></a></li>
       <li><a href="https://www.twitter.com/ckcallen/"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use></svg></a></li>
       <li><a href="https://www.dribbble.com/ckcallen/"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#dribbble"></use></svg></a></li>
     </ul>
-    <div class="whiteSlideSwitch noSelect"><span class="switchElement"></span></div>
   </div>
 </nav>
 
-<!-- White Slide 1 (#44) -->
-<!-- <section class="slide black webgl" data-title="top" data-name="top">
-  <div class="content">
-    <div class="container">
-      <div class="wrap left">
-
-        <div class="fix-6-12 toLeft">
-          <h1 class="largest bolder margin-bottom-2 ae-1 fromBottom">Chris Allen</h1>
-          <p class="largest weight-5 margin-bottom-4 ae-2 fromBottom"><span class="opacity-8">I lead the global design team for the New Ventures &amp; Technologies organization at SAP.&nbsp;&nbsp;We are on a mission to future-proof the company through product incubation and technology innovation.</span></p>
-          <a href="#" class="button white weight-6 rounded wideForPhablet cropLeft ae-4 fromBottom">See My Work</a>
-          <span class="button big actionButton black margin-left-3 fromBottom ae-5"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#instagram"></use></svg></span>
-          <span class="button big actionButton black margin-left-1 fromBottom ae-6"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#linkedin"></use></svg></span>
-          <span class="button big actionButton black margin-left-1 fromBottom ae-7"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mail"></use></svg></span>
-        </div>
-
-        <div class="fix-12-12 toLeft">
-          <ul class="flex margin-top-4">
-            <li class="col-3-12 margin-bottom-1 left ae-3">
-              <h4 class="smallest">Meet Quick</h4>
-              <p class="small opacity-8">I think it's really important to design things with a kind of personality.</p>
-            </li>
-            <li class="col-3-12 margin-bottom-1 left ae-4">
-             <h4 class="smallest">Better Interface</h4>
-              <p class="small opacity-8">Designers are very fickle. I never wanted to be a victim of that.</p>
-            </li>
-            <li class="col-3-12 margin-bottom-1 left ae-5">
-             <h4 class="smallest">Fast Connection</h4>
-              <p class="small opacity-8">The artist is a collector of things imaginary or real.</p>
-            </li>
-            <li class="col-3-12 margin-bottom-1 left ae-6">
-              <h4 class="smallest">Listen Your Mind</h4>
-              <p class="small opacity-8">The details are the very source of expression in architecture.</p>
-            </li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-  </div>
-  <div class="background"></div>
-
-</section> -->
-
-<!-- White Slide #50 -->
+<!-- Home -->
 <section class="slide black webgl" data-name="#">
   <div class="content">
     <div class="container">
@@ -216,7 +165,6 @@
               <p class="hideForPhone largest weight-4 ae-5 fromBottom"><span class="opacity-5">When I'm not running around the office, I'm exploring the Bay Area with my family, playing fetch with my cattle dog, or chasing my 3 year old daughter around the backyard like a hooligan.</span></p>
               <p class="showForPhone large weight-5 ae-4 fromBottom" style="display:none"><span class="opacity-8">I lead the global design team for the New Ventures &amp; Technologies organization at SAP.&nbsp;&nbsp;We are on a mission to future-proof the company through product incubation and technology innovation.</span></p>
               <p class="showForPhone large weight-4 ae-5 fromBottom" style="display:none"><span class="opacity-5">When I'm not running around the office, I'm usually chasing my 3 year old daughter around the backyard like a hooligan.</span></p>
-
             </li>
           </ul>
 
@@ -260,27 +208,12 @@
               <p class="largest weight-5 ae-3 fromBottom"><span class="opacity-4">September 2016 - Today</span></p>
             </li>
             <li class="col-6-12 left">
-              <!-- <p class="large weight-4 ae-4 fromBottom"><span class="opacity-8">I led the product & design team for the SAP.iO Venture Studio. Think of the Studio as an internal startup incubator for SAP. I managed a global team of designers, data scientists, and quality assurance specialists to build experiences for the enterprise at startup speed.  I'm also an individual contributor, responsible for the brand and product design for our newly invested ventures.  The work showcased here is my work, the work you see in production is my team's work.</span></p> -->
               <p class="large weight-4 ae-4 fromBottom"<span class="opacity-8">At SAP, I've been focused on achieving three goals.  First, to create a strong design team with a creative culture and passion for delivering excellent product experiences for our customers.  Second, to influence and impact design at one of the largest enterprise software companies in the world.  And third, to help scale our organization from 7 to over 350 in 3 years.</span></p>
             </li>
           </ul>
         </div>
         <div class="fix-12-12 margin-top-4">
-          <ul class="flex flex-75 fixedSpaces noText" data-popup-id="75">
-            <!-- <li class="col-3-12 fadeIn">
-              <img src="assets/img/io-logo@2x.png" class="wide rounded margin-bottom-2 ae-3" data-slider-id="75" data-slider-action="0" alt="Image"/>
-              <img src="assets/img/ruum-logo@2x.png" class="wide rounded margin-bottom-2 ae-4" data-slider-id="75" data-slider-action="1" alt="Image"/>
-            </li>
-            <li class="col-3-12 fadeIn">
-              <img src="assets/img/spotlight-logo@2x.png" class="wide rounded margin-bottom-2 ae-5" data-slider-id="75" data-slider-action="2" alt="Image"/>
-            </li>
-            <li class="col-3-12 fadeIn">
-              <img src="assets/img/atlas-logo@2x.png" class="wide rounded margin-bottom-2 ae-6" data-slider-id="75" data-slider-action="3" alt="Image"/>
-              <img src="assets/img/brilliant-logo@2x.png" class="wide rounded margin-bottom-2 ae-7" data-slider-id="75" data-slider-action="4" alt="Image"/>
-            </li>
-            <li class="col-3-12 fadeIn">
-              <img src="assets/img/nvt-logo@2x.png" class="wide rounded margin-bottom-2 ae-8" data-slider-id="75" data-slider-action="5" alt="Image"/>
-            </li> -->
+          <ul class="flex flex-75 fixedSpaces noText">
             <li class="col-3-12 col-tablet-1-2 col-phablet-1-1 ae-3 fromCenter">
               <a href="https://sap.io/" class="box-74 newMangoShadow" style="background:#ffb300;">
                 <div class="thumbnail-74">
@@ -328,39 +261,6 @@
 
 </section>
 
-<!-- Popup Gallery -->
-<!-- <div class="popup animated" data-popup-id="75">
-  <div class="close"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg></div>
-  <div class="content">
-    <div class="container">
-      <div class="wrap spaces">
-
-        <ul class="slider animated ae-1 fromAbove inlineBlock clickable popupContent disableSelect" data-slider-id="75" style="display: inline-block;">
-          <li class="selected">
-            <img src="assets/img/io-logo@2x.png" class="rounded" alt="Image"/>
-          </li>
-          <li>
-            <img src="assets/img/ruum-logo@2x.png" class="rounded" alt="Image"/>
-          </li>
-          <li>
-            <img src="assets/img/spotlight-logo@2x.png" class="rounded" alt="Image"/>
-          </li>
-          <li>
-            <img src="assets/img/atlas-logo@2x.png" class="rounded" alt="Image"/>
-          </li>
-          <li>
-            <img src="assets/img/brilliant-logo@2x.png" class="rounded" alt="Image"/>
-          </li>
-          <li>
-            <img src="assets/img/nvt-logo@2x.png" class="rounded" alt="Image"/>
-          </li>
-        </ul>
-
-      </div>
-    </div>
-  </div>
-</div> -->
-
 <!-- Ruum -->
 <section class="slide whiteSlide" data-name="ruum">
   <div class="content">
@@ -373,12 +273,11 @@
               <div class="fix-6-12 toLeft margin-left-tablet-auto margin-right-tablet-auto">
                 <h1 class="xl margin-bottom-2 ae-2 fromBottom newBlueText">Ruum</h1>
                 <p class="ae-3 fromBottom largest newBlueText padding-right-4"><span class="bold">Collaboratively plan, organize and execute your work efficiently.</span></p>
-                <!-- <p class="largest weight-5 ae-2 fromBottom"><span class="opacity-4"><a href="https://www.ruumapp.com">ruumapp.com</a></span></p> -->
                 <p class="ae-4 fromBottom large">Ruum is built with Angular and designed for mobile and primarily desktop use when it comes to building flexible project templates, assigning and managing tasks and timelines, as well as modeling new business processes.  I created the initial concepts and worked with developers in Berlin to release their beta.</p>
-                <p class="ae-5 fromBottom large margin-bottom-4">Once Ruum was off to the races, I helped hire incredible designers in Matthias Stegmueller, Iulia Shkatova, and Sarah Mautsch.  My favorite aspect about Ruum is it's clean and simple interface to collaborate with team members in real time on all kinds of different types of projects.</p>
-                <a class="button newBlue newBlueShadow rounded ae-6 fromBottom cropLeft wideForPhone">Sign Up For Free</a>
+                <p class="ae-5 fromBottom large margin-bottom-4">Once Ruum was off to the races, I helped hire incredible designers in <a href="https://www.linkedin.com/in/matthias-stegm%C3%BCller-a4831a76/">Matthias Stegmueller</a>, <a href="https://www.linkedin.com/in/julia-shkatova-052413143/">Julia Shkatova</a>, and <a href="https://www.linkedin.com/in/sarahmautsch/">Sarah Mautsch</a>.  My favorite aspect about Ruum is it's clean and simple interface to collaborate with team members in real time on all kinds of different types of projects.</p>
+                <a class="button newBlue newBlueShadow rounded ae-6 fromBottom cropLeft wideForPhone" href="https://open.ruumapp.com/auth/signup">Sign Up For Free</a>
                 <a class="button white newBlueShadow rounded ae-7 fromBottom wideForPhone newBlueText" href="https://www.ruumapp.com/careers">We're Hiring!</a>
-                <a class="button white newBlueShadow rounded ae-8 fromBottom wideForPhone newBlueText">Learn More</a>
+                <a class="button white newBlueShadow rounded ae-8 fromBottom wideForPhone newBlueText" href="https://www.ruumapp.com/">Learn More</a>
               </div>
             </li>
             <li class="col-6-12">
@@ -406,11 +305,10 @@
               <div class="fix-6-12 toLeft margin-left-tablet-auto margin-right-tablet-auto">
                 <h1 class="xl margin-bottom-2  ae-2 fromBottom newTealText">Dabra</h1>
                 <p class="ae-3 fromBottom largest newTealText"><span class="bold">Have focused &amp; productive 1:1 meetings while building trust with the people you work with.</span></p>
-                <!-- <p class="largest weight-5 ae-2 fromBottom"><span class="opacity-4"><a href="https://www.dabra.ai">dabra.ai</a></span></p> -->
                 <p class="ae-4 fromBottom large">Dabra is built with Vue.js and designed for mobile and desktop use when it comes to preparing, facilitating, and synthesizing meetings.  I created the initial concepts for the application and worked with developers in Tel Aviv to release their beta.</p>
-                <p class="ae-5 fromBottom large margin-bottom-4">Once Dabra was up and running, I hired incredible designers in Javier Yep and Daniel Jacoby to bring Dabra to the next level.  My favorite aspect about Dabra is the ability to view the notes history of my conversations - it's particularly helpful when having performance discussions.</p>
-                <a class="button newTeal newTealShadow rounded ae-6 fromBottom cropLeft wideForPhone">Sign Up For Free</a>
-                <a class="button white newTealShadow newTealText rounded ae-7 fromBottom wideForPhone">Learn More</a>
+                <p class="ae-5 fromBottom large margin-bottom-4">Once Dabra was up and running, I hired incredible designers in <a href="https://www.linkedin.com/in/javier-yep/">Javier Yep</a> and <a href="https://www.linkedin.com/in/danielj/">Daniel Jacoby</a> to bring Dabra to the next level.  My favorite aspect about Dabra is the ability to view the notes history of my conversations - it's particularly helpful when having performance discussions.</p>
+                <a class="button newTeal newTealShadow rounded ae-6 fromBottom cropLeft wideForPhone" href="https://app.dabra.ai/#/signup">Sign Up For Free</a>
+                <a class="button white newTealShadow newTealText rounded ae-7 fromBottom wideForPhone" href="https://www.dabra.ai">Learn More</a>
               </div>
             </li>
             <li class="col-6-12">
@@ -466,11 +364,9 @@
           <ul class="flex verticalCenter reverse">
             <li class="col-5-12 left">
               <h1 class="xl margin-bottom-2  ae-2 fromBottom newMangoText">iO Icons</h1>
-              <!-- <p class="ae-3 fromBottom largest newTealText"><span class="bold">Have focused &amp; productive 1:1 meetings while building trust with the people you work with.</span></p> -->
-              <p class="ae-4 fromBottom large">This project started out as a creative outlet on my commute to and from San Francisco - a simple redesign of Google's <a href="https://material.io/resources/icons/?style=baseline" class="bold">Material Design Icons</a> using the style of <a href="https://feathericons.com/" class="bold">Feather Icons</a>.</p>
-              <p class="ae-5 fromBottom large margin-bottom-4">After many trips on the train, the icon set has grown to more than 1,500 icons covering all of SAP's <a href="https://sapui5.hana.ondemand.com/sdk/test-resources/sap/m/demokit/iconExplorer/webapp/index.html#/overview/SAP-icons" class="bold">Fiori Icons</a> in addition to the Material Design icon set.  The main challenge was creating a set of ingredients (2px stroke, minimal fill shapes, etc) in order to scale the set across all of SAP for easy collaboration.</p>
-              <a class="button newMango newMangoShadow rounded ae-6 fromBottom cropLeft wideForPhone">View the Full Set</a>
-              <a class="button white newMangoShadow newMangoText rounded ae-7 fromBottom wideForPhone">Learn More</a>
+              <p class="ae-4 fromBottom large">This project started out as a creative outlet on my commute to and from San Francisco - a simple redesign of Google's <a href="https://material.io/resources/icons/?style=baseline">Material Design Icons</a> using the style of <a href="https://feathericons.com/">Feather Icons</a>.</p>
+              <p class="ae-5 fromBottom large margin-bottom-4">After many trips on the train, the icon set has grown to more than 1,500 icons covering all of SAP's <a href="https://sapui5.hana.ondemand.com/sdk/test-resources/sap/m/demokit/iconExplorer/webapp/index.html#/overview/SAP-icons">Fiori Icons</a> in addition to the Material Design icon set.  The main challenge was creating a set of ingredients (2px stroke, minimal fill shapes, rounded linecaps, etc) in order to scale the set across all of SAP for easy collaboration.</p>
+              <a class="button newMango newMangoShadow rounded ae-6 fromBottom cropLeft wideForPhone" href="https://www.figma.com/file/qc3Ybhkfm7NLG4dvmAMqjh/NVT-Icons?node-id=2%3A22737">View the Full Set</a>
             </li>
             <li class="col-1-12"></li>
             <li class="col-6-12 left relative ae-1 fade-6In">
@@ -507,8 +403,8 @@
               <h1 class="xl newIndigoText margin-bottom-2 ae-2 fromBottom">Atlas</h1>
               <p class="ae-3 fromBottom largest newIndigoText"><span class="bold">A geospatial analytics platform built to make data-driven decisions easy for everyone.</span></p>
               <p class="ae-4 fromBottom large">Atlas was built with Vue.js and most interactions were tied tightly to Mapbox when it came to manipulating the map and viewing a variety of data visualization types in 2D and 3D.  I created the initial concepts and worked with the developers in San Francisco to release their beta.</p>
-              <p class="ae-5 fromBottom large margin-bottom-4">Once Atlas was available for productive use, I hired Lucia Melgarejo and David Shen to explore how we can visualize geospatial data over time across multiple layers.  Unfortunately after a couple years, it was clear we wouldn't find a product market fit, so we decided to go through the painful process of sunsetting the venture.</p>
-              <a class="button newIndigo newIndigoShadow rounded ae-6 fromBottom cropLeft wideForPhone">Learn More</a>
+              <p class="ae-5 fromBottom large margin-bottom-4">Once Atlas was available for productive use, I hired <a href="https://www.linkedin.com/in/lucia-melgarejo/">Lucia Melgarejo</a> and <a href="https://www.linkedin.com/in/shendavid/">David Shen</a> to explore how we can visualize geospatial data over time across multiple layers.  Unfortunately after a couple years, it was clear we wouldn't find a product market fit, so we decided to go through the painful process of sunsetting the venture.</p>
+              <a class="button newIndigo newIndigoShadow rounded ae-6 fromBottom cropLeft wideForPhone" href="https://www.atlasapp.io">Learn More</a>
             </li>
             <li class="col-5-12 toRight left ae-1 fromBottom">
               <img class="ipad-32 ae-1 margin-bottom-tablet-4 switchDay showForDesktop showForTablet showForPhablet showForPhone toCenter" width="1080" src="assets/img/atlas@2x.png" alt="Atlas Concept Designs" data-action="zoom"/>
@@ -535,9 +431,9 @@
               <h1 class="xl newGreyText margin-bottom-2 ae-2 fromBottom">Spotlight</h1>
               <p class="ae-3 fromBottom largest newGreyText"><span class="bold">Actionable operations insights from all your enterprise business systems.</span></p>
               <p class="ae-4 fromBottom large">Spotlight is built with Vue.js and designed for primarily desktop use when it comes to monitoring business process, comparing metrics to industry standards, and tracking operational improvements over time.  I created the initial concepts and worked with developers in Berlin to release their alpha.</p>
-              <p class="ae-5 fromBottom large margin-bottom-4">Once Spotlight was released as a pilot to early customers, I transitioned the work to David Shen and Laura Ileana Ramirez Rivera.  My favorite aspect about Spotlight is it's ability to analyze all processes in a single view, allowing COOs to make data-driven decisions on "what to fix first."</p>
-              <a class="button newGrey newGreyShadow rounded ae-6 fromBottom cropLeft wideForPhone">Sign Up For Free</a>
-              <a class="button white newGreyShadow newGreyText rounded ae-7 fromBottom wideForPhone">Learn More</a>
+              <p class="ae-5 fromBottom large margin-bottom-4">Once Spotlight was released as a pilot to early customers, I transitioned the work to <a href="https://www.linkedin.com/in/shendavid/">David Shen</a> and <a href="https://www.linkedin.com/in/laura-ramirez-121b843a/">Laura Ileana Ramirez Rivera</a>.  My favorite aspect about Spotlight is it's ability to analyze all processes in a single view, allowing COOs to make data-driven decisions on "what to fix first."</p>
+              <a class="button newGrey newGreyShadow rounded ae-6 fromBottom cropLeft wideForPhone" href="https://www.getspotlight.io/#takeAction">Sign Up For Free</a>
+              <a class="button white newGreyShadow newGreyText rounded ae-7 fromBottom wideForPhone" href="https://www.getspotlight.io/">Learn More</a>
             </li>
             <li class="col-6-12 left ae-1 fromBottom">
               <img class="ipad-32 ae-1 margin-bottom-tablet-4 switchDay showForDesktop showForTablet showForPhablet showForPhone toCenter" width="1080" styles="margin:-40% 0" src="assets/img/spotlight@2x.png" alt="Spotlight Concept Designs" data-action="zoom"/>
@@ -563,7 +459,6 @@
             <li class="col-6-12 left middle">
               <div class="fix-6-12 toLeft margin-left-tablet-auto margin-right-tablet-auto">
                 <h1 class="xl margin-bottom-2 ae-1 newWhiteText fromBottom">Flipboard</h1>
-                <!-- <p class="ae-3 fromBottom largest newWhiteText"><span class="bold">It's your time - discover and share the stories that shape your world.</span></p> -->
                 <p class="ae-3 fromBottom large newWhiteText">I came to Flipboard to learn everything there was about product design for mobile apps at scale.  I learned that the prototype is king and that a good designer iterates through as many completely different concepts as possible in order to arrive at something special.  I also learned my job as a designer is to essentially rip out anything superfluous in the interface until the experience breaks.</p>
                 <p class="ae-4 fromBottom large margin-bottom-4 newWhiteText">I worked on a variety of features across mobile, tablet, and web in a few key areas including user on-boarding, curation, community, and growth.  I joined at about 80 people and witnessed explosive growth in both our monthly active users as well as employees - both doubling during the time I was there.</p>
                 <a class="button newRed newRedShadow rounded ae-5 fromBottom cropLeft wideForPhone">Sign Up For Free</a>
@@ -593,10 +488,9 @@
             <li class="col-5-12 left middle">
               <div class="fix-6-12 toLeft margin-left-tablet-auto margin-right-tablet-auto">
                 <h1 class="xl margin-bottom-2 ae-2 fromBottom newGreenText">Peapod</h1>
-                <!-- <p class="ae-3 fromBottom largest newGreenText padding-right-4"><span class="bold">Grocery shop from anywhere. Delivery on your schedule.</span></p>                 -->
                 <p class="ae-5 fromBottom large margin-bottom-4">I began my career at Peapod as a business analyst working on web applications for their loyalty program.  After managing the release of multiple hybrid mobile apps, I took the lead product management role for the core eCommerce platform and also served as the sole product designer.  With the support and mentorship from the CEO and CTO, I moved to the Bay Area to pursue my freshly formed passion in product design.</p>
-                <a class="button newGreen newGreenShadow rounded ae-6 fromBottom cropLeft wideForPhone">Start Shopping</a>
-                <a class="button white newGreenShadow newGreenText rounded ae-8 fromBottom wideForPhone">Learn More</a>
+                <a class="button newGreen newGreenShadow rounded ae-6 fromBottom cropLeft wideForPhone" href="https://www.peapod.com/">Start Shopping</a>
+                <a class="button white newGreenShadow newGreenText rounded ae-8 fromBottom wideForPhone" href="https://about.peapod.com/our-mission/">Learn More</a>
               </div>
             </li>
             <li class="col-1-12"></li>
@@ -620,22 +514,6 @@
   </div>
 
 </section>
-
-<!-- Popup Video -->
-<!-- <div class="popup autoplay" data-popup-id="16">
-  <div class="close"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg></div>
-  <div class="content">
-    <div class="container">
-      <div class="wrap">
-        <div class="fix-10-12">
-          <video class="popupContent shadow rounded" poster="assets/img/peapod@2x.jpg" autoplay="" loop="" muted="" webkit-playsinline="">
-            <source src="assets/video/peapod.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</div> -->
 
 <!-- Motorola -->
 <section class="slide whiteSlide" data-name="motorola">
@@ -664,12 +542,37 @@
 
 </section>
 
-<!-- Panel Bottom #09 -->
-<!-- <nav class="panel bottom">
-  <div class="sections">
-    <div class="center"><span class="nextSlide"><svg style="width:32px;height:32px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-down"></use></svg></span></div>
+<!-- Slide #55 -->
+<section class="slide whiteSlide" data-name="contact">
+  <div class="content">
+    <div class="container">
+      <div class="wrap">
+
+        <div class="fix-12-12 left">
+          <ul class="flex later">
+            <li class="col-6-12 left margin-bottom-4 ae-2">
+              <h1 class="xl margin-bottom-2 ae-1 fromBottom">Let's Connect</h1>
+              <span class="button big actionButton black cropLeft fromBottom ae-2"><a href="https://www.linkedin.com/in/ckcallen/"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#linkedin"></use></svg></a></span>
+              <span class="button big actionButton black margin-left-1 fromBottom ae-3"><a href="https://www.instagram.com/ckcallen/"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#instagram"></use></svg></a></span>
+              <span class="button big actionButton black margin-left-1 fromBottom ae-4"><a href="https://www.twitter.com/ckcallen/"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use></svg></a></span>
+              <span class="button big actionButton black margin-left-1 fromBottom ae-4"><a href="https://www.dribbble.com/ckcallen/"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#dribbble"></use></svg></a></span>
+            </li>
+            <li class="col-1-12"></li>
+            <li class="col-5-12 left ae-2">
+              <form class="slides-form wide left" action="ajax-email.php" id="contact-form" method="post" data-ajax-form="true">
+                <input class="stroke wide" id="name55" type="name" name="name" placeholder="Your name" required/>
+                <input class="stroke wide margin-top-2" id="email55" type="email" name="email" placeholder="Your email" required/>
+                <textarea class="wide left margin-top-2" id="message55" type="text" name="message" placeholder="Message" required></textarea>
+                <input class="button rounded wide black margin-top-2 cropBottom" type="submit" name="submit" value="Send" data-success-text="Done!" data-success-class="green"/>
+              </form>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
   </div>
-</nav> -->
+</section>
 
 <!-- Panel Bottom #01 -->
 <nav class="panel bottom forceMobileView">
@@ -689,29 +592,6 @@
     </div>
   </div>
 </nav>
-
-<!-- Share Window -->
-<!-- <div class="dropdown share bottom right" data-dropdown-id="2" data-text="Take a look at this" data-url="https://designmodo.com" data-pinterest-image="https://designmodo.com/wp-content/uploads/2015/10/Presentation.jpg">
-  <div class="center padding-2">
-    <div class="title">Share</div>
-    <a href="#">Contact us</a>
-  </div>
-  <ul>
-    <li class="social-facebook"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#fb-like"></use></svg></li>
-    <li class="social-twitter"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use></svg></li>
-    <li class="social-pinterest"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#pinterest"></use></svg></li>
-    <li class="social-linkedin"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#linkedin"></use></svg></li>
-    <li class="mail" data-subject="Subject" data-body="Body">share by email</li>
-  </ul>
-</div> -->
-
-<!-- Step 3: Copy the toggle button -->
-<!-- <nav class="panel bottom forceMobileView">
-  <div class="sections">
-    <div class="left"><div class="whiteSlideSwitch noSelect">Night<span class="switchElement"></span>Day</div></div>
-    <div class="right"></div>
-  </div>
-</nav> -->
 
 <!-- Compressed Styles -->
 <link href="css/slides.min.css?503341" rel="stylesheet" type="text/css">

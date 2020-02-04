@@ -5,11 +5,15 @@
   line-height: 1.25;
   font-family: 'TTCommons-Regular','-apple-system','BlinkMacSystemFont','Segoe UI',Helvetica,Arial,sans-serif;
 }
+.whiteSlide .zoom-overlay {background:#FFF;}
 
 /* Side */
 .side {
   padding-left: 36px;
   padding-right: 36px;
+}
+.side.compact {
+  padding: 40px;
 }
 
 /* Colors */
@@ -62,38 +66,40 @@
 .newGreenShadow:hover {box-shadow: 0 16px 32px rgba(93,193,33,.32) !important;}
 
 /* Panel Colors Overrides */
-.switchElement {background: #eeeeee !important;}                          /* Switch */
-.click .switchElement {background: #404040 !important;}                   /* Switch */
-.slides.stage-1 {background: #202020;}                                    /* Home */
-.slides.stage-1 .switchElement {background: #404040 !important;}          /* Home */
-.slides.stage-2 {background: #202020;}                                    /* SAP */
-.slides.stage-3 {background: #1C90FF;}                                    /* Ruum */
-.slides.stage-3 .panel svg {fill:#1C90FF !important;}                     /* Ruum */
-.slides.stage-3 .navigation li:after {background: #1C90FF !important;}    /* Ruum */
+.switchElement {background: #eeeeee !important; transition: 1s;}                /* Switch */
+.click .switchElement {background: #404040 !important; transition: 1s;}         /* Switch */
+.switchElement:after {transition: 1s;}                                          /* Switch */
+.slides.stage-1 {background: #202020;}                                          /* Home */
+.slides.stage-1 .switchElement {background: #404040 !important;}                /* Home */
+.slides.stage-2 {background: #202020;}                                          /* SAP */
+.slides.stage-3 {background: #1C90FF;}                                          /* Ruum */
+.slides.stage-3 .panel svg {fill:#1C90FF !important;}                           /* Ruum */
+.slides.stage-3 .navigation li:after {background: #1C90FF !important;}          /* Ruum */
 .slides.stage-3 .click .switchElement:after {background: #1C90FF !important;}   /* Ruum */
-.slides.stage-4 {background: #01CEAC;}                                    /* Dabra */
-.slides.stage-4 .panel svg {fill:#01CEAC !important;}                     /* Dabra */
-.slides.stage-4 .navigation li:after {background: #01CEAC !important;}    /* Dabra */
+.slides.stage-4 {background: #01CEAC;}                                          /* Dabra */
+.slides.stage-4 .panel svg {fill:#01CEAC !important;}                           /* Dabra */
+.slides.stage-4 .navigation li:after {background: #01CEAC !important;}          /* Dabra */
 .slides.stage-4 .click .switchElement:after {background: #01CEAC !important;}   /* Dabra */
-.slides.stage-5 {background: #FFB300;}                                    /* Icons */
-.slides.stage-5 .panel svg {fill:#FFB300 !important;}                     /* Icons */
-.slides.stage-5 .navigation li:after {background: #FFB300 !important;}    /* Icons */
+.slides.stage-5 {background: #FFB300;}                                          /* Icons */
+.slides.stage-5 .panel svg {fill:#FFB300 !important;}                           /* Icons */
+.slides.stage-5 .navigation li:after {background: #FFB300 !important;}          /* Icons */
 .slides.stage-5 .click .switchElement:after {background: #FFB300 !important;}   /* Icons */
-.slides.stage-6 {background: #5D36FF;}                                    /* Atlas */
-.slides.stage-6 .panel svg {fill:#5D36FF !important;}                     /* Atlas */
-.slides.stage-6 .navigation li:after {background: #5D36FF !important;}    /* Atlas */
+.slides.stage-6 {background: #5D36FF;}                                          /* Atlas */
+.slides.stage-6 .panel svg {fill:#5D36FF !important;}                           /* Atlas */
+.slides.stage-6 .navigation li:after {background: #5D36FF !important;}          /* Atlas */
 .slides.stage-6 .click .switchElement:after {background: #5D36FF !important;}   /* Icons */
-.slides.stage-7 {background: #465E75;}                                    /* Spotlight */
-.slides.stage-7 .panel svg {fill:#465E75 !important;}                     /* Spotlight */
-.slides.stage-7 .navigation li:after {background: #465E75 !important;}    /* Spotlight */
+.slides.stage-7 {background: #465E75;}                                          /* Spotlight */
+.slides.stage-7 .panel svg {fill:#465E75 !important;}                           /* Spotlight */
+.slides.stage-7 .navigation li:after {background: #465E75 !important;}          /* Spotlight */
 .slides.stage-7 .click .switchElement:after {background: #465E75 !important;}   /* Spotlight */
-.slides.stage-8 {background: #EE3939;}                                    /* Flipboard */
-.slides.stage-8 .panel svg {fill:#EE3939 !important;}                     /* Flipboard */
-.slides.stage-8 .navigation li:after {background: #EE3939 !important;}    /* Flipboard */
+.slides.stage-8 {background: #EE3939;}                                          /* Flipboard */
+.slides.stage-8 .panel svg {fill:#EE3939 !important;}                           /* Flipboard */
+.slides.stage-8 .navigation li:after {background: #EE3939 !important;}          /* Flipboard */
+.slides.stage-8 .switchElement {background: #000000 !important;}   /* Flipboard */
 .slides.stage-8 .click .switchElement:after {background: #EE3939 !important;}   /* Flipboard */
-.slides.stage-9 {background: #5DC121;}                                    /* Peapod */
-.slides.stage-9 .panel svg {fill:#5DC121 !important;}                     /* Peapod */
-.slides.stage-9 .navigation li:after {background: #5DC121 !important;}    /* Peapod */
+.slides.stage-9 {background: #5DC121;}                                          /* Peapod */
+.slides.stage-9 .panel svg {fill:#5DC121 !important;}                           /* Peapod */
+.slides.stage-9 .navigation li:after {background: #5DC121 !important;}          /* Peapod */
 .slides.stage-9 .click .switchElement:after {background: #5DC121 !important;}   /* Peapod */
 .slides.stage-10 .click .switchElement:after {background: #FFFFFF !important;}  /* Motorola */
 
