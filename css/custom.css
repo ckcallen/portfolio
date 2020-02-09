@@ -138,6 +138,7 @@ h1.xl, .h1.largest {font-size: 72px;line-height: 1;letter-spacing:0;}
 
 /* Buttons */
 .button {font-size: 18px;}
+.button.stroke.big {padding: 14px;}
 /* .button.actionButton.big {width: 48px; height: 48px; padding: 12px;}
 .button.actionButton.big svg {left: 0px; top: 2px;} */
 
