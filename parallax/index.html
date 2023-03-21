@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+  <head>
+    <title>SAP · Sign In</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background: #fff;
+      }
+      section {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      section img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        mix-blend-mode: multiply;
+        opacity: 88%;
+      }
+
+      .modal {
+        width: 488px;
+        height: 464px;
+        background-image: url("modal@2x.png");
+        background-size: cover;
+        z-index: 99;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="modal"></div>
+      <img src="glass-1.png" data-speed="-4" class="layer">
+      <img src="glass-2.png" data-speed="2" class="layer">
+      <img src="glass-3.png" data-speed="12" class="layer">
+      <img src="glass-4.png" data-speed="-8" class="layer">
+      <img src="glass-5.png" data-speed="8" class="layer">
+    </section>
+    <!-- <script type="text/javascript">
+      document.addEventListener("mousemove" , parallax);
+
+      function parallax(e){
+        this.querySelectorAll('.layer').forEach(Layer => {
+          const speed = layer.getAttribute('data-speed')
+
+          const x = (window.innerWidth - e.pageX * speed) / 100
+          const y = (window.innerHeight - e.pageY * speed) / 100
+
+          layer.style.transform = 'translateX(${x}px) translateY(${y}px)'
+        })
+
+      }
+    </script> -->
+    <script type="text/javascript">
+
+      document.addEventListener("mousemove", parallax);
+        function parallax(event) {
+          this.querySelectorAll(".layer").forEach((shift) => {
+            const position = shift.getAttribute("data-speed");
+            const x = (window.innerWidth - event.pageX * position) / 80;
+            const y = (window.innerHeight - event.pageY * position) / 20;
+            // const s = 1 + ((window.innerHeight - event.pageY) / 1000);
+            // console.log(s)
+            // const rndInt = Math.floor(Math.random() * 100) + 1
+            // console.log(rndInt)
+            //
+            // shift.style.left = `${rndInt}px`;
+            // shift.style.top = `${rndInt}px`;
+            shift.style.transform = `translateX(${x}px) translateY(${y}px)`;
+          });}
+    </script>
+  </body>
+</html>
