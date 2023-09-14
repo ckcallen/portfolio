@@ -1,0 +1,49 @@
+aside {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left:-60px;
+  margin-top:-60px;
+}
+
+.star {
+  -webkit-animation: glimmerStars .6s ease-in-out alternate infinite;
+          animation: glimmerStars .6s ease-in-out alternate infinite;
+}
+.star:nth-child(2) {
+   transform-origin: 100px 24px;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+.star:nth-child(3) {
+   transform-origin: 42px 0px;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+.star:nth-child(4) {
+   transform-origin: 16px 24px;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+@-webkit-keyframes glimmerStars {
+  0% {
+    transform: scale(1);
+    opacity: 50%;
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes glimmerStars {
+  0% {
+    transform: scale(1);
+    opacity: 50%;
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
